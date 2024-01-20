@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="关于python数据可视化的学习——2022年冬一ndim      返回int 表示数组的维度shape     返回tuple 表示数组的尺寸，n行m列为（n，m）size      返回 int 表示数组的元素总数，扥与数字形状的乘积dtype     返回data-type 描述数组中元素的类型itemsize  返回int 表示数组的每个元素的大小（以字节为单位） 二 Numpy ran">
+  <meta name="description" content="关于python数据可视化的学习——2022年冬">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于Numpy库的学习">
 <meta property="og:url" content="http://example.com/2024/01/20/%E5%85%B3%E4%BA%8ENumpy%E5%BA%93%E7%9A%84%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="关于python数据可视化的学习——2022年冬一ndim      返回int 表示数组的维度shape     返回tuple 表示数组的尺寸，n行m列为（n，m）size      返回 int 表示数组的元素总数，扥与数字形状的乘积dtype     返回data-type 描述数组中元素的类型itemsize  返回int 表示数组的每个元素的大小（以字节为单位） 二 Numpy ran">
+<meta property="og:description" content="关于python数据可视化的学习——2022年冬">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-20T11:38:35.000Z">
-<meta property="article:modified_time" content="2024-01-20T11:55:19.591Z">
+<meta property="article:modified_time" content="2024-01-20T14:12:23.080Z">
 <meta property="article:author" content="L-Q19">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
@@ -190,7 +190,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-20 19:38:35 / 修改时间：19:55:19" itemprop="dateCreated datePublished" datetime="2024-01-20T19:38:35+08:00">2024-01-20</time>
+              <time title="创建时间：2024-01-20 19:38:35 / 修改时间：22:12:23" itemprop="dateCreated datePublished" datetime="2024-01-20T19:38:35+08:00">2024-01-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
             </span>
 
           
@@ -204,7 +213,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="关于python数据可视化的学习——2022年冬"><a href="#关于python数据可视化的学习——2022年冬" class="headerlink" title="关于python数据可视化的学习——2022年冬"></a>关于python数据可视化的学习——2022年冬</h1><h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>ndim      返回int 表示数组的维度<br>shape     返回tuple 表示数组的尺寸，n行m列为（n，m）<br>size      返回 int 表示数组的元素总数，扥与数字形状的乘积<br>dtype     返回data-type 描述数组中元素的类型<br>itemsize  返回int 表示数组的每个元素的大小（以字节为单位）</p>
+        <p>关于python数据可视化的学习——2022年冬</p>
+ <span id="more"></span>
+
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>ndim      返回int 表示数组的维度<br>shape     返回tuple 表示数组的尺寸，n行m列为（n，m）<br>size      返回 int 表示数组的元素总数，扥与数字形状的乘积<br>dtype     返回data-type 描述数组中元素的类型<br>itemsize  返回int 表示数组的每个元素的大小（以字节为单位）</p>
 <h2 id="二-Numpy-random"><a href="#二-Numpy-random" class="headerlink" title="二 Numpy random"></a>二 Numpy random</h2><p>seed 			种子<br>permutation 	返回一个序列的随机排列<br>shuffle  		对一个序列进行随机分布<br>binomial 		产生二项分布随机数<br>normal 			产生正态（高斯）分布的随机数<br>beta 			产生beta分布的随机数<br>chisquare 		产生卡方分布的随机数<br>gamma 			产生gamma分布的随机数<br>uniform 		产生在[0,1)中均匀分布的随机数</p>
 <h2 id="三-数组形态变换"><a href="#三-数组形态变换" class="headerlink" title="三 数组形态变换"></a>三 数组形态变换</h2><p>reshape						修改数组维度<br>ravel   					flatten将数组展平<br>vstack						纵向拼接<br>hstack						横向拼接<br>hsplit(arr1,2)				纵向切割<br>vsplit(arr1,2)				横向切割<br>split（arr2，2，axis&#x3D;1&#x2F;0）	增加参数进行切割</p>
 <h2 id="四-Numpy进行统计"><a href="#四-Numpy进行统计" class="headerlink" title="四 Numpy进行统计"></a>四 Numpy进行统计</h2><p>save 					以二进制保存<br>load 					以二进制读取<br>savez 					以二进制保存多组数据<br>savetxt 				保存为指定txt格式<br>loadtxt 				读取为指定txt格式<br>#	genfromtxt<br>sort 					函数顺序排序axis&#x3D;0为按列<br>argsort 				顺序排序返回下标<br>tile 					对数组进行复制<br>repeat   				对数组元素进行复制<br>mean 					统计数组所有元素的均值（axis&#x3D;0&#x2F;1统计列&#x2F;行均值）<br>max&#x2F;min（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行最大值&#x2F;最小值<br>argmax（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行元素最大值</p>
@@ -297,7 +309,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8Epython%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9A%84%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%942022%E5%B9%B4%E5%86%AC"><span class="nav-number">1.</span> <span class="nav-text">关于python数据可视化的学习——2022年冬</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80"><span class="nav-number">1.1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-Numpy-random"><span class="nav-number">1.2.</span> <span class="nav-text">二 Numpy random</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-%E6%95%B0%E7%BB%84%E5%BD%A2%E6%80%81%E5%8F%98%E6%8D%A2"><span class="nav-number">1.3.</span> <span class="nav-text">三 数组形态变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-Numpy%E8%BF%9B%E8%A1%8C%E7%BB%9F%E8%AE%A1"><span class="nav-number">1.4.</span> <span class="nav-text">四 Numpy进行统计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E4%BA%9BMatplotlib%E5%9B%BE%E5%83%8F%E7%9A%84%E7%BB%98%E5%88%B6"><span class="nav-number">2.</span> <span class="nav-text">一些Matplotlib图像的绘制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%AF%B9Pandas%E5%BA%93%E5%AF%B9%E8%AF%BB%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">一些对Pandas库对读文件的内容</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80"><span class="nav-number">1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-Numpy-random"><span class="nav-number">2.</span> <span class="nav-text">二 Numpy random</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-%E6%95%B0%E7%BB%84%E5%BD%A2%E6%80%81%E5%8F%98%E6%8D%A2"><span class="nav-number">3.</span> <span class="nav-text">三 数组形态变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-Numpy%E8%BF%9B%E8%A1%8C%E7%BB%9F%E8%AE%A1"><span class="nav-number">4.</span> <span class="nav-text">四 Numpy进行统计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E4%BA%9BMatplotlib%E5%9B%BE%E5%83%8F%E7%9A%84%E7%BB%98%E5%88%B6"><span class="nav-number"></span> <span class="nav-text">一些Matplotlib图像的绘制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%AF%B9Pandas%E5%BA%93%E5%AF%B9%E8%AF%BB%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number"></span> <span class="nav-text">一些对Pandas库对读文件的内容</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -316,6 +328,12 @@
           <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
@@ -346,7 +364,7 @@
 
 <div class="copyright">
   
-  &copy; Mon Jan 15 2024 08:00:00 GMT+0800 (中国标准时间) – 
+  &copy; 
   <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
