@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>first blog</title>
+    <url>/2024/01/20/first-blog/</url>
+    <content><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p>
+ <span id="more"></span>
+
+<h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在博客文件根目录下创建文件config</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure>
+
+<p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
+
+<p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
+<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="E:\Blog\source_posts\first-blog\github新建连接1.jpg" alt=" &quot;图片出错&quot; "><br><img src="E:\Blog\source_posts\first-blog\github新建连接2.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/01/15/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2> <span id="more"></span>
+
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于Numpy库的学习</title>
+    <url>/2024/01/20/%E5%85%B3%E4%BA%8ENumpy%E5%BA%93%E7%9A%84%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>关于python数据可视化的学习——2022年冬</p>
+ <span id="more"></span>
+
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>ndim      返回int 表示数组的维度<br>shape     返回tuple 表示数组的尺寸，n行m列为（n，m）<br>size      返回 int 表示数组的元素总数，扥与数字形状的乘积<br>dtype     返回data-type 描述数组中元素的类型<br>itemsize  返回int 表示数组的每个元素的大小（以字节为单位）</p>
+<h2 id="二-Numpy-random"><a href="#二-Numpy-random" class="headerlink" title="二 Numpy random"></a>二 Numpy random</h2><p>seed 			种子<br>permutation 	返回一个序列的随机排列<br>shuffle  		对一个序列进行随机分布<br>binomial 		产生二项分布随机数<br>normal 			产生正态（高斯）分布的随机数<br>beta 			产生beta分布的随机数<br>chisquare 		产生卡方分布的随机数<br>gamma 			产生gamma分布的随机数<br>uniform 		产生在[0,1)中均匀分布的随机数</p>
+<h2 id="三-数组形态变换"><a href="#三-数组形态变换" class="headerlink" title="三 数组形态变换"></a>三 数组形态变换</h2><p>reshape						修改数组维度<br>ravel   					flatten将数组展平<br>vstack						纵向拼接<br>hstack						横向拼接<br>hsplit(arr1,2)				纵向切割<br>vsplit(arr1,2)				横向切割<br>split（arr2，2，axis&#x3D;1&#x2F;0）	增加参数进行切割</p>
+<h2 id="四-Numpy进行统计"><a href="#四-Numpy进行统计" class="headerlink" title="四 Numpy进行统计"></a>四 Numpy进行统计</h2><p>save 					以二进制保存<br>load 					以二进制读取<br>savez 					以二进制保存多组数据<br>savetxt 				保存为指定txt格式<br>loadtxt 				读取为指定txt格式<br>#	genfromtxt<br>sort 					函数顺序排序axis&#x3D;0为按列<br>argsort 				顺序排序返回下标<br>tile 					对数组进行复制<br>repeat   				对数组元素进行复制<br>mean 					统计数组所有元素的均值（axis&#x3D;0&#x2F;1统计列&#x2F;行均值）<br>max&#x2F;min（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行最大值&#x2F;最小值<br>argmax（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行元素最大值</p>
+<h1 id="一些Matplotlib图像的绘制"><a href="#一些Matplotlib图像的绘制" class="headerlink" title="一些Matplotlib图像的绘制"></a>一些Matplotlib图像的绘制</h1><p>matplotlib.pyplot.scatter 		(x,y,点大小，颜色，点的类型，透明度)</p>
+<p>中文显示<br>plt.rcParams[‘font.sans-serif’]&#x3D;’SimHei’    #设置中文显示<br>plt.rcParams[‘axes.unicode_minus’]&#x3D;False</p>
+<p>绘制折线图<br>matplotlib.pyplot.plot(*args,**kwargs)</p>
+<p>绘制直方图<br>matplotlib.pyplot.bar(x轴取值点left，y坐标取值，柱子的间距，颜色等其他参数)</p>
+<p>绘制饼图<br>matplotlib.pyplot.pie(区域面积，扇形距圆心的距离)</p>
+<h1 id="一些对Pandas库对读文件的内容"><a href="#一些对Pandas库对读文件的内容" class="headerlink" title="一些对Pandas库对读文件的内容"></a>一些对Pandas库对读文件的内容</h1><p>pandas.read_csv				将数据框存储为文本文件<br>数据.to_csv(路径，参数)		读取excel文件</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于hyperledger fabric通道占用问题</title>
+    <url>/2024/01/20/%E5%85%B3%E4%BA%8Ehyperledger-fabric%E9%80%9A%E9%81%93%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>环境为ubuntu20.04，hyperledger2.5</p>
+<span id="more"></span>
+
+<p>在linux系统下<br>首先修改resolv.conf内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/resolv.conf</span><br></pre></td></tr></table></figure>
+
+<p>注释其中的optins内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#optins</span></span><br></pre></td></tr></table></figure>
+
+<p>然后输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker stop $(docker ps -aq)</span><br><span class="line">docker <span class="built_in">rm</span> -f $(docker ps -aq)</span><br><span class="line">docker <span class="built_in">rm</span>  $(docker ps -a | grep <span class="string">&quot;hyperledger/*&quot;</span> | awk <span class="string">&quot;&#123;print \$1&#125;&quot;</span>)</span><br><span class="line">docker-compose down --volumes --remove-orphans</span><br><span class="line">docker volume prune</span><br><span class="line">docker network prune</span><br></pre></td></tr></table></figure>
+
+<p>重新启动项目即可</p>
+<p>删除命令<br>rm -rf()</p>
+<p>Vmware虚拟机磁盘扩充问题<br><a href="https://blog.csdn.net/weixin_52103018/article/details/120297379">https://blog.csdn.net/weixin_52103018/article/details/120297379</a></p>
+]]></content>
+      <categories>
+        <category>区块链</category>
+      </categories>
+      <tags>
+        <tag>hyperledger fabric</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正则表达式相关内容</title>
+    <url>/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<p>对于正则表达式相关内容的学习</p>
+ <span id="more"></span>
+
+<h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p>
+<p>^:开启<br>$:结束（表达验证）</p>
+<p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p>
+<h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p>
+<p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+</search>
