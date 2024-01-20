@@ -162,6 +162,70 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/E:/Blog/public/images/avatar.png">
+      <meta itemprop="name" content="L-Q19">
+      <meta itemprop="description" content="We are all in the gutter.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MyBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/" class="post-title-link" itemprop="url">正则表达式相关内容</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-01-20 19:57:43 / 修改时间：20:02:04" itemprop="dateCreated datePublished" datetime="2024-01-20T19:57:43+08:00">2024-01-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>对于正则表达式相关内容的学习</p>
+<h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p>
+<p>^:开启<br>$:结束（表达验证）</p>
+<p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p>
+<h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p>
+<p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/20/%E5%85%B3%E4%BA%8ENumpy%E5%BA%93%E7%9A%84%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -187,7 +251,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-20 19:38:35 / 修改时间：19:52:39" itemprop="dateCreated datePublished" datetime="2024-01-20T19:38:35+08:00">2024-01-20</time>
+              <time title="创建时间：2024-01-20 19:38:35 / 修改时间：19:55:19" itemprop="dateCreated datePublished" datetime="2024-01-20T19:38:35+08:00">2024-01-20</time>
             </span>
 
           
@@ -325,7 +389,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-20 15:20:37 / 修改时间：16:28:21" itemprop="dateCreated datePublished" datetime="2024-01-20T15:20:37+08:00">2024-01-20</time>
+              <time title="创建时间：2024-01-20 15:20:37 / 修改时间：19:55:46" itemprop="dateCreated datePublished" datetime="2024-01-20T15:20:37+08:00">2024-01-20</time>
             </span>
 
           
@@ -349,7 +413,7 @@
 <p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 <p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
-<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="E:\Blog\source_posts\first-blog\github新建连接1.jpg" alt=" &quot;图片出错&quot; "><br><img src="E:\Blog\source_posts\first-blog\github新建连接2.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
+<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="E:\Blog\source_posts\first-blog\github新建连接1.jpg" alt=" &quot;图片出错&quot; "><br><img src="E:\Blog\source_posts\first-blog\github新建连接2.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
 
       
     </div>
@@ -503,14 +567,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
