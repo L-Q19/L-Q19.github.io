@@ -9,8 +9,31 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Tue, 20 Feb 2024 13:52:07 GMT</pubDate>
+    <pubDate>Fri, 23 Feb 2024 09:32:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>关于git拉取项目中一些配置指令</title>
+      <link>http://example.com/2024/02/23/%E5%85%B3%E4%BA%8Egit%E6%8B%89%E5%8F%96%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%8C%87%E4%BB%A4/</link>
+      <guid>http://example.com/2024/02/23/%E5%85%B3%E4%BA%8Egit%E6%8B%89%E5%8F%96%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%8C%87%E4%BB%A4/</guid>
+      <pubDate>Fri, 23 Feb 2024 09:20:24 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;报错信息&quot;&gt;&lt;a href=&quot;#报错信息&quot; class=&quot;headerlink&quot; title=&quot;报错信息&quot;&gt;&lt;/a&gt;报错信息&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;error: RPC failed; result=18, HTTP code = 200194.00 KiB/s    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fatal: The remote end hung up unexpectedly&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fatal: 过早的文件结束符（EOF）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fatal: index-pack failed&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; result=18, HTTP code = 200194.00 KiB/s    </span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: 过早的文件结束符（EOF）</span><br><span class="line">fatal: index-pack failed</span><br></pre></td></tr></table></figure><span id="more"></span><p>在多次修改后存在两个问题 一是在于传输速度的限制 二是git内存的问题<br>修改git配置后解决</p><h3 id="初次修改"><a href="#初次修改" class="headerlink" title="初次修改"></a>初次修改</h3><p>对于提交缓存修改大小</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure><p>也可以设置更大的值</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 1048576000</span><br></pre></td></tr></table></figure><p>注： 参数 –global 针对当前用户生效 ， 设置所有用户使用 –system</p><h2 id="二次修改"><a href="#二次修改" class="headerlink" title="二次修改"></a>二次修改</h2><p>对配置git的之地速度和最低时间</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.lowSpeedLimit 0</span><br><span class="line">git config --global http.lowSpeedTime 999999</span><br></pre></td></tr></table></figure><p>这里的时间单位是秒</p><h2 id="三次修改"><a href="#三次修改" class="headerlink" title="三次修改"></a>三次修改</h2><p>问题在于git内存不够引起的报错</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.compression 0</span><br></pre></td></tr></table></figure><p>注：未求证部分<br>可以修改以下配置，得到相同的效果</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[core] </span><br><span class="line">packedGitLimit = 512m </span><br><span class="line">packedGitWindowSize = 512m </span><br><span class="line">[pack] </span><br><span class="line">deltaCacheSize = 2047m </span><br><span class="line">packSizeLimit = 2047m </span><br><span class="line">windowMemory = 2047m</span><br></pre></td></tr></table></figure><p>git配置指令设置</p><p><a href="https://blog.csdn.net/wcf2328/article/details/103211767">https://blog.csdn.net/wcf2328/article/details/103211767</a></p>]]></content:encoded>
+      
+      
+      <category domain="http://example.com/categories/git/">git</category>
+      
+      
+      <category domain="http://example.com/tags/git/">git</category>
+      
+      
+      <comments>http://example.com/2024/02/23/%E5%85%B3%E4%BA%8Egit%E6%8B%89%E5%8F%96%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%8C%87%E4%BB%A4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>截至2024/2/20以前的小作文</title>
