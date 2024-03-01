@@ -9,8 +9,31 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Fri, 23 Feb 2024 09:32:54 GMT</pubDate>
+    <pubDate>Fri, 01 Mar 2024 14:15:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>关于cnpm下载时的问题</title>
+      <link>http://example.com/2024/03/01/%E5%85%B3%E4%BA%8Ecnpm%E4%B8%8B%E8%BD%BD%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <guid>http://example.com/2024/03/01/%E5%85%B3%E4%BA%8Ecnpm%E4%B8%8B%E8%BD%BD%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <pubDate>Fri, 01 Mar 2024 14:06:57 GMT</pubDate>
+      
+      <description>&lt;p&gt;关于下载cnpm时报错的处理&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>关于下载cnpm时报错的处理</p><span id="more"></span><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>报错信息：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! code EPERM</span><br><span class="line">npm ERR! syscall <span class="built_in">mkdir</span></span><br><span class="line">npm ERR! path E:\nodejs\npde_global</span><br><span class="line">npm ERR! errno -4048</span><br><span class="line">npm ERR! Error: EPERM: operation not permitted, <span class="built_in">mkdir</span> <span class="string">&#x27;E:\nodejs\npde_global&#x27;</span></span><br><span class="line">npm ERR!  [Error: EPERM: operation not permitted, <span class="built_in">mkdir</span> <span class="string">&#x27;E:\nodejs\npde_global&#x27;</span>] &#123;</span><br><span class="line">npm ERR!   errno: -4048,</span><br><span class="line">npm ERR!   code: <span class="string">&#x27;EPERM&#x27;</span>,</span><br><span class="line">npm ERR!   syscall: <span class="string">&#x27;mkdir&#x27;</span>,</span><br><span class="line">npm ERR!   path: <span class="string">&#x27;E:\\nodejs\\npde_global&#x27;</span></span><br><span class="line">npm ERR! &#125;</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! The operation was rejected by your operating system.</span><br><span class="line">npm ERR! It<span class="string">&#x27;s possible that the file was already in use (by a text editor or antivirus),</span></span><br><span class="line"><span class="string">npm ERR! or that you lack permissions to access it.</span></span><br><span class="line"><span class="string">npm ERR!</span></span><br><span class="line"><span class="string">npm ERR! If you believe this might be a permissions issue, please double-check the</span></span><br><span class="line"><span class="string">npm ERR! permissions of the file and its containing directories, or try running</span></span><br><span class="line"><span class="string">npm ERR! the command again as root/Administrator.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">npm ERR! Log files were not written due to an error writing to the directory: E:\nodejs\npde_cache\_logs</span></span><br><span class="line"><span class="string">npm ERR! You can rerun the command with `--loglevel=verbose` to see the logs in your terminal</span></span><br></pre></td></tr></table></figure><p>解决1：</p><p>删除C:\USer\用户名.npmrc</p><p>清除缓存</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm cache verify</span><br></pre></td></tr></table></figure><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>问题：下载卡在idealTree:npm:sill idealTree buildDeps</p><p>首先检查并使用解决1</p><p>其次设置镜像源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure><p>检验是否设置成功</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure><p>重新执行下载命令</p>]]></content:encoded>
+      
+      
+      <category domain="http://example.com/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="http://example.com/tags/nodejs/">nodejs</category>
+      
+      
+      <comments>http://example.com/2024/03/01/%E5%85%B3%E4%BA%8Ecnpm%E4%B8%8B%E8%BD%BD%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>关于git拉取项目中一些配置指令</title>
