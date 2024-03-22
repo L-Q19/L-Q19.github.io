@@ -9,8 +9,30 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Fri, 01 Mar 2024 14:15:28 GMT</pubDate>
+    <pubDate>Fri, 22 Mar 2024 12:27:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>blog的基本使用教程</title>
+      <link>http://example.com/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <guid>http://example.com/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <pubDate>Fri, 22 Mar 2024 12:20:34 GMT</pubDate>
+      
+      <description>&lt;p&gt;blog的基本使用教程&lt;/p&gt;
+&lt;p&gt;关于给健忘症患者的一个警醒&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>blog的基本使用教程</p><p>关于给健忘症患者的一个警醒</p><span id="more"></span><p>创建一个新的post类型blog</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;标题名称&quot;</span></span><br></pre></td></tr></table></figure><p>hexo的三段式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>其上分别为 清除静态文件<br>生成静态文件<br>重新部署</p><p>另外有本地预览模式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://example.com/categories/hexo-blog/">hexo blog</category>
+      
+      
+      
+      <comments>http://example.com/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>关于cnpm下载时的问题</title>
@@ -160,7 +182,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p> <span id="more"></span><h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure><p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure><p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p><p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="E:\Blog\source_posts\first-blog\github新建连接1.jpg" alt=" &quot;图片出错&quot; "><br><img src="E:\Blog\source_posts\first-blog\github新建连接2.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p> <span id="more"></span><h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure><p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure><p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p><p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="E:\Blog\source_posts\first-blog\github新建连接1.jpg" alt=" &quot;图片出错&quot; "><br><img src="E:\Blog\source_posts\first-blog\github新建连接2.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>]]></content:encoded>
       
       
       <category domain="http://example.com/categories/blog/">blog</category>
