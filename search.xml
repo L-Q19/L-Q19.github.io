@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>first blog</title>
-    <url>/2024/01/20/first-blog/</url>
-    <content><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p>
- <span id="more"></span>
-
-<h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure>
-
-<p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
-
-<p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
-<p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
-<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>blog的基本使用教程</title>
     <url>/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>blog的基本使用教程</p>
@@ -45,17 +21,65 @@
       </categories>
   </entry>
   <entry>
-    <title>javaArrayList</title>
-    <url>/2024/04/27/javaArrayList/</url>
-    <content><![CDATA[<p>关于java集合的学习</p>
-<span id="more"></span>
+    <title>first blog</title>
+    <url>/2024/01/20/first-blog/</url>
+    <content><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p>
+ <span id="more"></span>
 
-<p>增</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">list.add()</span><br></pre></td></tr></table></figure>
-<p>删</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">list.remove()</span><br><span class="line">参数可以为内容也可以为索引</span><br><span class="line"></span><br><span class="line">list.set()</span><br><span class="line">参数为(索引,改后内容)</span><br></pre></td></tr></table></figure>
-<p>查</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">list.get()</span><br><span class="line">参数为索引</span><br><span class="line">list.size()</span><br><span class="line">无参数，返回集合长度</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure>
+
+<p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
+
+<p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
+<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>javaString</title>
+    <url>/2024/04/27/javaString/</url>
+    <content><![CDATA[<p>关于java String的学习</p>
+<span id="more"></span>
+<h2 id="java-String类"><a href="#java-String类" class="headerlink" title="java String类"></a>java String类</h2><p>求 长度str.length()</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">String str = <span class="string">&quot;abc&quot;</span></span><br><span class="line">str.length()</span><br><span class="line">// 3</span><br></pre></td></tr></table></figure>
+
+<p>字符串比较 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">关注大小写    str1.equals(str2)</span><br><span class="line">不区分大小写  str1.equalsIgnoreCase(str2)</span><br></pre></td></tr></table></figure>
+
+<p>替换</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.replace(<span class="string">&quot;x1&quot;</span>,<span class="string">&quot;x2&quot;</span>)</span><br><span class="line">用x1替换x2生成一个新的字符串</span><br><span class="line">x2不存在不报错</span><br></pre></td></tr></table></figure>
+
+<p>字符串索引</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.charAt</span><br></pre></td></tr></table></figure>
+
+<p>利用索引给字符串切片</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.substring(x,y)</span><br><span class="line">切得str[x,y)</span><br></pre></td></tr></table></figure>
+
+<p>数组强制转换为字符串</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">int[] arr = new int[]&#123;&#125;</span><br><span class="line">String str = arrToString(arr)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="StringBuilder类"><a href="#StringBuilder类" class="headerlink" title="StringBuilder类"></a>StringBuilder类</h2><p>一个操作字符的容器本身并不是String<br>在字符串拼接和反转非常有效</p>
+<p>构造方法</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringBuilder sb=new StringBuilder()</span><br><span class="line">参数可以默认最初容器内容</span><br></pre></td></tr></table></figure>
+
+
+<p>添加</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.append(str)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>反转</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.reverse()</span><br></pre></td></tr></table></figure>
+
+<h2 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h2><p>JDK8开始出现，用于字符串拼接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringJoiner sj = new StringJoiner()</span><br><span class="line">参数为 (间隔符号,开始符号,结束符号)</span><br><span class="line">sj.add()  添加元素      </span><br><span class="line">toString  转换为字符串</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -108,46 +132,34 @@
       </tags>
   </entry>
   <entry>
-    <title>javaString</title>
-    <url>/2024/04/27/javaString/</url>
-    <content><![CDATA[<p>关于java String的学习</p>
+    <title>关于cnpm下载时的问题</title>
+    <url>/2024/03/01/%E5%85%B3%E4%BA%8Ecnpm%E4%B8%8B%E8%BD%BD%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>关于下载cnpm时报错的处理</p>
 <span id="more"></span>
-<h2 id="java-String类"><a href="#java-String类" class="headerlink" title="java String类"></a>java String类</h2><p>求 长度str.length()</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">String str = <span class="string">&quot;abc&quot;</span></span><br><span class="line">str.length()</span><br><span class="line">// 3</span><br></pre></td></tr></table></figure>
 
-<p>字符串比较 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">关注大小写    str1.equals(str2)</span><br><span class="line">不区分大小写  str1.equalsIgnoreCase(str2)</span><br></pre></td></tr></table></figure>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>报错信息：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm ERR! code EPERM</span><br><span class="line">npm ERR! syscall <span class="built_in">mkdir</span></span><br><span class="line">npm ERR! path E:\nodejs\npde_global</span><br><span class="line">npm ERR! errno -4048</span><br><span class="line">npm ERR! Error: EPERM: operation not permitted, <span class="built_in">mkdir</span> <span class="string">&#x27;E:\nodejs\npde_global&#x27;</span></span><br><span class="line">npm ERR!  [Error: EPERM: operation not permitted, <span class="built_in">mkdir</span> <span class="string">&#x27;E:\nodejs\npde_global&#x27;</span>] &#123;</span><br><span class="line">npm ERR!   errno: -4048,</span><br><span class="line">npm ERR!   code: <span class="string">&#x27;EPERM&#x27;</span>,</span><br><span class="line">npm ERR!   syscall: <span class="string">&#x27;mkdir&#x27;</span>,</span><br><span class="line">npm ERR!   path: <span class="string">&#x27;E:\\nodejs\\npde_global&#x27;</span></span><br><span class="line">npm ERR! &#125;</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! The operation was rejected by your operating system.</span><br><span class="line">npm ERR! It<span class="string">&#x27;s possible that the file was already in use (by a text editor or antivirus),</span></span><br><span class="line"><span class="string">npm ERR! or that you lack permissions to access it.</span></span><br><span class="line"><span class="string">npm ERR!</span></span><br><span class="line"><span class="string">npm ERR! If you believe this might be a permissions issue, please double-check the</span></span><br><span class="line"><span class="string">npm ERR! permissions of the file and its containing directories, or try running</span></span><br><span class="line"><span class="string">npm ERR! the command again as root/Administrator.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">npm ERR! Log files were not written due to an error writing to the directory: E:\nodejs\npde_cache\_logs</span></span><br><span class="line"><span class="string">npm ERR! You can rerun the command with `--loglevel=verbose` to see the logs in your terminal</span></span><br></pre></td></tr></table></figure>
 
-<p>替换</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.replace(<span class="string">&quot;x1&quot;</span>,<span class="string">&quot;x2&quot;</span>)</span><br><span class="line">用x1替换x2生成一个新的字符串</span><br><span class="line">x2不存在不报错</span><br></pre></td></tr></table></figure>
+<p>解决1：</p>
+<p>删除C:\USer\用户名.npmrc</p>
+<p>清除缓存</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm cache verify</span><br></pre></td></tr></table></figure>
 
-<p>字符串索引</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.charAt</span><br></pre></td></tr></table></figure>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>问题：下载卡在idealTree:npm:sill idealTree buildDeps</p>
+<p>首先检查并使用解决1</p>
+<p>其次设置镜像源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>
 
-<p>利用索引给字符串切片</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.substring(x,y)</span><br><span class="line">切得str[x,y)</span><br></pre></td></tr></table></figure>
+<p>检验是否设置成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
 
-<p>数组强制转换为字符串</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">int[] arr = new int[]&#123;&#125;</span><br><span class="line">String str = arrToString(arr)</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="StringBuilder类"><a href="#StringBuilder类" class="headerlink" title="StringBuilder类"></a>StringBuilder类</h2><p>一个操作字符的容器本身并不是String<br>在字符串拼接和反转非常有效</p>
-<p>构造方法</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringBuilder sb=new StringBuilder()</span><br><span class="line">参数可以默认最初容器内容</span><br></pre></td></tr></table></figure>
-
-
-<p>添加</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.append(str)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>反转</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.reverse()</span><br></pre></td></tr></table></figure>
-
-<h2 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h2><p>JDK8开始出现，用于字符串拼接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringJoiner sj = new StringJoiner()</span><br><span class="line">参数为 (间隔符号,开始符号,结束符号)</span><br><span class="line">sj.add()  添加元素      </span><br><span class="line">toString  转换为字符串</span><br></pre></td></tr></table></figure>]]></content>
+<p>重新执行下载命令</p>
+]]></content>
       <categories>
-        <category>java</category>
+        <category>nodejs</category>
       </categories>
       <tags>
-        <tag>java</tag>
+        <tag>nodejs</tag>
       </tags>
   </entry>
   <entry>
@@ -212,67 +224,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于python实例的学习笔记</title>
-    <url>/2024/03/22/%E5%85%B3%E4%BA%8Epython%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>关于python学习的笔记</p>
-<p>基本算法和函数和一些标准库的学习</p>
-<span id="more"></span>
-
-<h2 id="1-判断各国是数字的字符"><a href="#1-判断各国是数字的字符" class="headerlink" title="1 判断各国是数字的字符"></a>1 判断各国是数字的字符</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import unicodedata</span><br><span class="line">unicodedata.numeric(<span class="string">&quot;字符&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-各个进制的转换"><a href="#2-各个进制的转换" class="headerlink" title="2 各个进制的转换"></a>2 各个进制的转换</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">十进制数为： dec</span><br><span class="line">二进制： bin(dec)</span><br><span class="line">八进制：oct(dec)</span><br><span class="line">十六进制：hex(dec)</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-ASCII码与字符相互转换"><a href="#3-ASCII码与字符相互转换" class="headerlink" title="3 ASCII码与字符相互转换"></a>3 ASCII码与字符相互转换</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">转为ASCII：ord(<span class="string">&quot;字符&quot;</span>)</span><br><span class="line">转为字符：chr(数字)</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-日历库"><a href="#4-日历库" class="headerlink" title="4 日历库"></a>4 日历库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import calendar</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-字符串判断"><a href="#5-字符串判断" class="headerlink" title="5 字符串判断"></a>5 字符串判断</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(str.isalnum()) <span class="comment"># 判断所有字符都是数字或者字母</span></span><br><span class="line"><span class="built_in">print</span>(str.isalpha()) <span class="comment"># 判断所有字符都是字母</span></span><br><span class="line"><span class="built_in">print</span>(str.isdigit()) <span class="comment"># 判断所有字符都是数字</span></span><br><span class="line"><span class="built_in">print</span>(str.islower()) <span class="comment"># 判断所有字符都是小写</span></span><br><span class="line"><span class="built_in">print</span>(str.isupper()) <span class="comment"># 判断所有字符都是大写</span></span><br><span class="line"><span class="built_in">print</span>(str.istitle()) <span class="comment"># 判断所有单词都是首字母大写，像标题</span></span><br><span class="line"><span class="built_in">print</span>(str.isspace()) <span class="comment"># 判断所有字符都是空白字符、\t、\n、\r</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="6-字符串大小写转换"><a href="#6-字符串大小写转换" class="headerlink" title="6 字符串大小写转换"></a>6 字符串大小写转换</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(str.upper())          <span class="comment"># 把所有字符中的小写字母转换成大写字母</span></span><br><span class="line"><span class="built_in">print</span>(str.lower())          <span class="comment"># 把所有字符中的大写字母转换成小写字母</span></span><br><span class="line"><span class="built_in">print</span>(str.capitalize())     <span class="comment"># 把第一个字母转化为大写字母，其余小写</span></span><br><span class="line"><span class="built_in">print</span>(str.title())          <span class="comment"># 把每个单词的第一个字母转化为大写，其余小写 </span></span><br></pre></td></tr></table></figure>
-
-<h2 id="7-datetime-日期库"><a href="#7-datetime-日期库" class="headerlink" title="7 datetime 日期库"></a>7 datetime 日期库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import datetime</span><br></pre></td></tr></table></figure>
-
-<h2 id="8-字典变列表操作"><a href="#8-字典变列表操作" class="headerlink" title="8 字典变列表操作"></a>8 字典变列表操作</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[k <span class="keyword">for</span> k, v <span class="keyword">in</span> d.items()]  <span class="comment">#取键为列表 元素为字符</span></span><br><span class="line">[v <span class="keyword">for</span> k, v <span class="keyword">in</span> d.items()]  <span class="comment">#取值为列表</span></span><br><span class="line">[<span class="string">&quot;%s=%s&quot;</span> % (k, v) <span class="keyword">for</span> k, v <span class="keyword">in</span> params.items()]  <span class="comment">#以规定形式 将键值对转换为列表</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="9-列表过滤操作"><a href="#9-列表过滤操作" class="headerlink" title="9 列表过滤操作"></a>9 列表过滤操作</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span> li <span class="keyword">if</span> len(i) &gt; 1] <span class="comment">#遍历列表将串长大于1的取出作列表</span></span><br><span class="line">条件可随情况更改如 i!= <span class="string">&quot;x&quot;</span> 等</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>关于cnpm下载时的问题</title>
-    <url>/2024/03/01/%E5%85%B3%E4%BA%8Ecnpm%E4%B8%8B%E8%BD%BD%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>关于下载cnpm时报错的处理</p>
-<span id="more"></span>
-
-<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>报错信息：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm ERR! code EPERM</span><br><span class="line">npm ERR! syscall <span class="built_in">mkdir</span></span><br><span class="line">npm ERR! path E:\nodejs\npde_global</span><br><span class="line">npm ERR! errno -4048</span><br><span class="line">npm ERR! Error: EPERM: operation not permitted, <span class="built_in">mkdir</span> <span class="string">&#x27;E:\nodejs\npde_global&#x27;</span></span><br><span class="line">npm ERR!  [Error: EPERM: operation not permitted, <span class="built_in">mkdir</span> <span class="string">&#x27;E:\nodejs\npde_global&#x27;</span>] &#123;</span><br><span class="line">npm ERR!   errno: -4048,</span><br><span class="line">npm ERR!   code: <span class="string">&#x27;EPERM&#x27;</span>,</span><br><span class="line">npm ERR!   syscall: <span class="string">&#x27;mkdir&#x27;</span>,</span><br><span class="line">npm ERR!   path: <span class="string">&#x27;E:\\nodejs\\npde_global&#x27;</span></span><br><span class="line">npm ERR! &#125;</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! The operation was rejected by your operating system.</span><br><span class="line">npm ERR! It<span class="string">&#x27;s possible that the file was already in use (by a text editor or antivirus),</span></span><br><span class="line"><span class="string">npm ERR! or that you lack permissions to access it.</span></span><br><span class="line"><span class="string">npm ERR!</span></span><br><span class="line"><span class="string">npm ERR! If you believe this might be a permissions issue, please double-check the</span></span><br><span class="line"><span class="string">npm ERR! permissions of the file and its containing directories, or try running</span></span><br><span class="line"><span class="string">npm ERR! the command again as root/Administrator.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">npm ERR! Log files were not written due to an error writing to the directory: E:\nodejs\npde_cache\_logs</span></span><br><span class="line"><span class="string">npm ERR! You can rerun the command with `--loglevel=verbose` to see the logs in your terminal</span></span><br></pre></td></tr></table></figure>
-
-<p>解决1：</p>
-<p>删除C:\USer\用户名.npmrc</p>
-<p>清除缓存</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm cache verify</span><br></pre></td></tr></table></figure>
-
-<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>问题：下载卡在idealTree:npm:sill idealTree buildDeps</p>
-<p>首先检查并使用解决1</p>
-<p>其次设置镜像源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>
-
-<p>检验是否设置成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<p>重新执行下载命令</p>
-]]></content>
-      <categories>
-        <category>nodejs</category>
-      </categories>
-      <tags>
-        <tag>nodejs</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>截至2024/2/20以前的小作文</title>
     <url>/2024/02/20/%E6%88%AA%E8%87%B32024-2-20%E4%BB%A5%E5%89%8D%E7%9A%84%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
     <content><![CDATA[<p>截至2024&#x2F;2&#x2F;20以前的小作文<br>悟已往之不谏，知来者之可追。</p>
@@ -306,5 +257,35 @@
       <tags>
         <tag>python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>关于python实例的学习笔记</title>
+    <url>/2024/03/22/%E5%85%B3%E4%BA%8Epython%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>关于python学习的笔记</p>
+<p>基本算法和函数和一些标准库的学习</p>
+<span id="more"></span>
+
+<h2 id="1-判断各国是数字的字符"><a href="#1-判断各国是数字的字符" class="headerlink" title="1 判断各国是数字的字符"></a>1 判断各国是数字的字符</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import unicodedata</span><br><span class="line">unicodedata.numeric(<span class="string">&quot;字符&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-各个进制的转换"><a href="#2-各个进制的转换" class="headerlink" title="2 各个进制的转换"></a>2 各个进制的转换</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">十进制数为： dec</span><br><span class="line">二进制： bin(dec)</span><br><span class="line">八进制：oct(dec)</span><br><span class="line">十六进制：hex(dec)</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-ASCII码与字符相互转换"><a href="#3-ASCII码与字符相互转换" class="headerlink" title="3 ASCII码与字符相互转换"></a>3 ASCII码与字符相互转换</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">转为ASCII：ord(<span class="string">&quot;字符&quot;</span>)</span><br><span class="line">转为字符：chr(数字)</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-日历库"><a href="#4-日历库" class="headerlink" title="4 日历库"></a>4 日历库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import calendar</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-字符串判断"><a href="#5-字符串判断" class="headerlink" title="5 字符串判断"></a>5 字符串判断</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(str.isalnum()) <span class="comment"># 判断所有字符都是数字或者字母</span></span><br><span class="line"><span class="built_in">print</span>(str.isalpha()) <span class="comment"># 判断所有字符都是字母</span></span><br><span class="line"><span class="built_in">print</span>(str.isdigit()) <span class="comment"># 判断所有字符都是数字</span></span><br><span class="line"><span class="built_in">print</span>(str.islower()) <span class="comment"># 判断所有字符都是小写</span></span><br><span class="line"><span class="built_in">print</span>(str.isupper()) <span class="comment"># 判断所有字符都是大写</span></span><br><span class="line"><span class="built_in">print</span>(str.istitle()) <span class="comment"># 判断所有单词都是首字母大写，像标题</span></span><br><span class="line"><span class="built_in">print</span>(str.isspace()) <span class="comment"># 判断所有字符都是空白字符、\t、\n、\r</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="6-字符串大小写转换"><a href="#6-字符串大小写转换" class="headerlink" title="6 字符串大小写转换"></a>6 字符串大小写转换</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(str.upper())          <span class="comment"># 把所有字符中的小写字母转换成大写字母</span></span><br><span class="line"><span class="built_in">print</span>(str.lower())          <span class="comment"># 把所有字符中的大写字母转换成小写字母</span></span><br><span class="line"><span class="built_in">print</span>(str.capitalize())     <span class="comment"># 把第一个字母转化为大写字母，其余小写</span></span><br><span class="line"><span class="built_in">print</span>(str.title())          <span class="comment"># 把每个单词的第一个字母转化为大写，其余小写 </span></span><br></pre></td></tr></table></figure>
+
+<h2 id="7-datetime-日期库"><a href="#7-datetime-日期库" class="headerlink" title="7 datetime 日期库"></a>7 datetime 日期库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import datetime</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-字典变列表操作"><a href="#8-字典变列表操作" class="headerlink" title="8 字典变列表操作"></a>8 字典变列表操作</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[k <span class="keyword">for</span> k, v <span class="keyword">in</span> d.items()]  <span class="comment">#取键为列表 元素为字符</span></span><br><span class="line">[v <span class="keyword">for</span> k, v <span class="keyword">in</span> d.items()]  <span class="comment">#取值为列表</span></span><br><span class="line">[<span class="string">&quot;%s=%s&quot;</span> % (k, v) <span class="keyword">for</span> k, v <span class="keyword">in</span> params.items()]  <span class="comment">#以规定形式 将键值对转换为列表</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="9-列表过滤操作"><a href="#9-列表过滤操作" class="headerlink" title="9 列表过滤操作"></a>9 列表过滤操作</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span> li <span class="keyword">if</span> len(i) &gt; 1] <span class="comment">#遍历列表将串长大于1的取出作列表</span></span><br><span class="line">条件可随情况更改如 i!= <span class="string">&quot;x&quot;</span> 等</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
   </entry>
 </search>

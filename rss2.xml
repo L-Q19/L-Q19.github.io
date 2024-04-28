@@ -9,31 +9,8 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Sat, 27 Apr 2024 15:06:48 GMT</pubDate>
+    <pubDate>Sat, 27 Apr 2024 08:13:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>javaArrayList</title>
-      <link>http://example.com/2024/04/27/javaArrayList/</link>
-      <guid>http://example.com/2024/04/27/javaArrayList/</guid>
-      <pubDate>Sat, 27 Apr 2024 14:00:37 GMT</pubDate>
-      
-      <description>&lt;p&gt;关于java集合的学习&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>关于java集合的学习</p><span id="more"></span><p>增</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list.add()</span><br></pre></td></tr></table></figure><p>删</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">list.remove()</span><br><span class="line">参数可以为内容也可以为索引</span><br><span class="line"></span><br><span class="line">list.set()</span><br><span class="line">参数为(索引,改后内容)</span><br></pre></td></tr></table></figure><p>查</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">list.get()</span><br><span class="line">参数为索引</span><br><span class="line">list.size()</span><br><span class="line">无参数，返回集合长度</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="http://example.com/categories/java/">java</category>
-      
-      
-      <category domain="http://example.com/tags/java/">java</category>
-      
-      
-      <comments>http://example.com/2024/04/27/javaArrayList/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>javaString</title>
@@ -237,6 +214,29 @@
       
       
       <comments>http://example.com/2024/01/20/%E5%85%B3%E4%BA%8Ehyperledger-fabric%E9%80%9A%E9%81%93%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>first blog</title>
+      <link>http://example.com/2024/01/20/first-blog/</link>
+      <guid>http://example.com/2024/01/20/first-blog/</guid>
+      <pubDate>Sat, 20 Jan 2024 07:20:37 GMT</pubDate>
+      
+      <description>&lt;p&gt;关于在第一次创建博客页面中产生的问题。&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p> <span id="more"></span><h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure><p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure><p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p><p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>]]></content:encoded>
+      
+      
+      <category domain="http://example.com/categories/blog/">blog</category>
+      
+      
+      <category domain="http://example.com/tags/blog/">blog</category>
+      
+      
+      <comments>http://example.com/2024/01/20/first-blog/#disqus_thread</comments>
       
     </item>
     
