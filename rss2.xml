@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Thu, 23 May 2024 02:19:36 GMT</pubDate>
+    <pubDate>Thu, 23 May 2024 02:23:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>2024夏java教学实习</p><span id="more"></span><p>关于注解<br>依赖注入，对象注入IOC容器<br>Mybatis<br>@Mapper</p><p>Spring<br>@Component  总<br>@Controller controller<br>@Service    service<br>@Repository dao</p><p>spring自动注入<br>@Autowired</p><p>动态SQL<br><if></if><br>用于判断条件是否成立，如果条件为true，则拼接SQL<br><where><br>where元素只会在子元素有内容的情况下才插入where子句，而且会<br>自动去除子句的开头的AND或OR<br><set><br>动态地在行首插入 SET 关键字，并会删掉额外的逗号。（用在<br>update语句中<br><sql><br>定义可重用的SQL片段,抽取相同部分,用id作以标注<br><insert><br>通过属性refid，指定包含的SQL片段</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>2024夏java教学实习</p><span id="more"></span><p>关于注解<br>依赖注入，对象注入IOC容器</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Mybatis</span><br><span class="line">@Mapper</span><br><span class="line"></span><br><span class="line">Spring</span><br><span class="line">@Component  总</span><br><span class="line">@Controller controller</span><br><span class="line">@Service    service</span><br><span class="line">@Repository dao</span><br><span class="line"></span><br><span class="line">spring自动注入</span><br><span class="line">@Autowired</span><br></pre></td></tr></table></figure><p>动态SQL</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">if</span>&gt;&lt;/if&gt;</span><br><span class="line">用于判断条件是否成立，如果条件为<span class="literal">true</span>，则拼接SQL</span><br><span class="line">&lt;<span class="built_in">where</span>&gt;</span><br><span class="line"><span class="built_in">where</span>元素只会在子元素有内容的情况下才插入<span class="built_in">where</span>子句，而且会</span><br><span class="line">自动去除子句的开头的AND或OR</span><br><span class="line">&lt;<span class="built_in">set</span>&gt;</span><br><span class="line">动态地在行首插入 SET 关键字，并会删掉额外的逗号。（用在</span><br><span class="line">update语句中</span><br><span class="line">&lt;sql&gt;</span><br><span class="line">定义可重用的SQL片段,抽取相同部分,用<span class="built_in">id</span>作以标注</span><br><span class="line">&lt;insert&gt;</span><br><span class="line">通过属性refid，指定包含的SQL片段</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="http://example.com/categories/java/">java</category>

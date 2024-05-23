@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2024java教学实训</title>
-    <url>/2024/05/22/2024java%E6%95%99%E5%AD%A6%E5%AE%9E%E8%AE%AD/</url>
-    <content><![CDATA[<p>2024夏java教学实习</p>
-<span id="more"></span>
-
-
-<p>关于注解<br>依赖注入，对象注入IOC容器<br>Mybatis<br>@Mapper</p>
-<p>Spring<br>@Component  总<br>@Controller controller<br>@Service    service<br>@Repository dao</p>
-<p>spring自动注入<br>@Autowired</p>
-<p>动态SQL<br><if></if><br>用于判断条件是否成立，如果条件为true，则拼接SQL<br><where><br>where元素只会在子元素有内容的情况下才插入where子句，而且会<br>自动去除子句的开头的AND或OR<br><set><br>动态地在行首插入 SET 关键字，并会删掉额外的逗号。（用在<br>update语句中<br><sql><br>定义可重用的SQL片段,抽取相同部分,用id作以标注<br><insert><br>通过属性refid，指定包含的SQL片段</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>blog的基本使用教程</title>
     <url>/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>blog的基本使用教程</p>
@@ -40,6 +21,27 @@
       </categories>
   </entry>
   <entry>
+    <title>2024java教学实训</title>
+    <url>/2024/05/22/2024java%E6%95%99%E5%AD%A6%E5%AE%9E%E8%AE%AD/</url>
+    <content><![CDATA[<p>2024夏java教学实习</p>
+<span id="more"></span>
+
+
+<p>关于注解<br>依赖注入，对象注入IOC容器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Mybatis</span><br><span class="line">@Mapper</span><br><span class="line"></span><br><span class="line">Spring</span><br><span class="line">@Component  总</span><br><span class="line">@Controller controller</span><br><span class="line">@Service    service</span><br><span class="line">@Repository dao</span><br><span class="line"></span><br><span class="line">spring自动注入</span><br><span class="line">@Autowired</span><br></pre></td></tr></table></figure>
+
+
+<p>动态SQL</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;<span class="keyword">if</span>&gt;&lt;/if&gt;</span><br><span class="line">用于判断条件是否成立，如果条件为<span class="literal">true</span>，则拼接SQL</span><br><span class="line">&lt;<span class="built_in">where</span>&gt;</span><br><span class="line"><span class="built_in">where</span>元素只会在子元素有内容的情况下才插入<span class="built_in">where</span>子句，而且会</span><br><span class="line">自动去除子句的开头的AND或OR</span><br><span class="line">&lt;<span class="built_in">set</span>&gt;</span><br><span class="line">动态地在行首插入 SET 关键字，并会删掉额外的逗号。（用在</span><br><span class="line">update语句中</span><br><span class="line">&lt;sql&gt;</span><br><span class="line">定义可重用的SQL片段,抽取相同部分,用<span class="built_in">id</span>作以标注</span><br><span class="line">&lt;insert&gt;</span><br><span class="line">通过属性refid，指定包含的SQL片段</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>first blog</title>
     <url>/2024/01/20/first-blog/</url>
     <content><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p>
@@ -54,7 +56,7 @@
 <p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 <p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
-<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
+<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
 ]]></content>
       <categories>
         <category>blog</category>
@@ -82,30 +84,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>关于Numpy库的学习</title>
-    <url>/2024/01/20/%E5%85%B3%E4%BA%8ENumpy%E5%BA%93%E7%9A%84%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>关于python数据可视化的学习——2022年冬</p>
- <span id="more"></span>
-
-<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>ndim      返回int 表示数组的维度<br>shape     返回tuple 表示数组的尺寸，n行m列为（n，m）<br>size      返回 int 表示数组的元素总数，扥与数字形状的乘积<br>dtype     返回data-type 描述数组中元素的类型<br>itemsize  返回int 表示数组的每个元素的大小（以字节为单位）</p>
-<h2 id="二-Numpy-random"><a href="#二-Numpy-random" class="headerlink" title="二 Numpy random"></a>二 Numpy random</h2><p>seed 			种子<br>permutation 	返回一个序列的随机排列<br>shuffle  		对一个序列进行随机分布<br>binomial 		产生二项分布随机数<br>normal 			产生正态（高斯）分布的随机数<br>beta 			产生beta分布的随机数<br>chisquare 		产生卡方分布的随机数<br>gamma 			产生gamma分布的随机数<br>uniform 		产生在[0,1)中均匀分布的随机数</p>
-<h2 id="三-数组形态变换"><a href="#三-数组形态变换" class="headerlink" title="三 数组形态变换"></a>三 数组形态变换</h2><p>reshape						修改数组维度<br>ravel   					flatten将数组展平<br>vstack						纵向拼接<br>hstack						横向拼接<br>hsplit(arr1,2)				纵向切割<br>vsplit(arr1,2)				横向切割<br>split（arr2，2，axis&#x3D;1&#x2F;0）	增加参数进行切割</p>
-<h2 id="四-Numpy进行统计"><a href="#四-Numpy进行统计" class="headerlink" title="四 Numpy进行统计"></a>四 Numpy进行统计</h2><p>save 					以二进制保存<br>load 					以二进制读取<br>savez 					以二进制保存多组数据<br>savetxt 				保存为指定txt格式<br>loadtxt 				读取为指定txt格式<br>#	genfromtxt<br>sort 					函数顺序排序axis&#x3D;0为按列<br>argsort 				顺序排序返回下标<br>tile 					对数组进行复制<br>repeat   				对数组元素进行复制<br>mean 					统计数组所有元素的均值（axis&#x3D;0&#x2F;1统计列&#x2F;行均值）<br>max&#x2F;min（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行最大值&#x2F;最小值<br>argmax（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行元素最大值</p>
-<h1 id="一些Matplotlib图像的绘制"><a href="#一些Matplotlib图像的绘制" class="headerlink" title="一些Matplotlib图像的绘制"></a>一些Matplotlib图像的绘制</h1><p>matplotlib.pyplot.scatter 		(x,y,点大小，颜色，点的类型，透明度)</p>
-<p>中文显示<br>plt.rcParams[‘font.sans-serif’]&#x3D;’SimHei’    #设置中文显示<br>plt.rcParams[‘axes.unicode_minus’]&#x3D;False</p>
-<p>绘制折线图<br>matplotlib.pyplot.plot(*args,**kwargs)</p>
-<p>绘制直方图<br>matplotlib.pyplot.bar(x轴取值点left，y坐标取值，柱子的间距，颜色等其他参数)</p>
-<p>绘制饼图<br>matplotlib.pyplot.pie(区域面积，扇形距圆心的距离)</p>
-<h1 id="一些对Pandas库对读文件的内容"><a href="#一些对Pandas库对读文件的内容" class="headerlink" title="一些对Pandas库对读文件的内容"></a>一些对Pandas库对读文件的内容</h1><p>pandas.read_csv				将数据框存储为文本文件<br>数据.to_csv(路径，参数)		读取excel文件</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
   </entry>
   <entry>
     <title>javaString</title>
@@ -148,6 +126,30 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Numpy库的学习</title>
+    <url>/2024/01/20/%E5%85%B3%E4%BA%8ENumpy%E5%BA%93%E7%9A%84%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>关于python数据可视化的学习——2022年冬</p>
+ <span id="more"></span>
+
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>ndim      返回int 表示数组的维度<br>shape     返回tuple 表示数组的尺寸，n行m列为（n，m）<br>size      返回 int 表示数组的元素总数，扥与数字形状的乘积<br>dtype     返回data-type 描述数组中元素的类型<br>itemsize  返回int 表示数组的每个元素的大小（以字节为单位）</p>
+<h2 id="二-Numpy-random"><a href="#二-Numpy-random" class="headerlink" title="二 Numpy random"></a>二 Numpy random</h2><p>seed 			种子<br>permutation 	返回一个序列的随机排列<br>shuffle  		对一个序列进行随机分布<br>binomial 		产生二项分布随机数<br>normal 			产生正态（高斯）分布的随机数<br>beta 			产生beta分布的随机数<br>chisquare 		产生卡方分布的随机数<br>gamma 			产生gamma分布的随机数<br>uniform 		产生在[0,1)中均匀分布的随机数</p>
+<h2 id="三-数组形态变换"><a href="#三-数组形态变换" class="headerlink" title="三 数组形态变换"></a>三 数组形态变换</h2><p>reshape						修改数组维度<br>ravel   					flatten将数组展平<br>vstack						纵向拼接<br>hstack						横向拼接<br>hsplit(arr1,2)				纵向切割<br>vsplit(arr1,2)				横向切割<br>split（arr2，2，axis&#x3D;1&#x2F;0）	增加参数进行切割</p>
+<h2 id="四-Numpy进行统计"><a href="#四-Numpy进行统计" class="headerlink" title="四 Numpy进行统计"></a>四 Numpy进行统计</h2><p>save 					以二进制保存<br>load 					以二进制读取<br>savez 					以二进制保存多组数据<br>savetxt 				保存为指定txt格式<br>loadtxt 				读取为指定txt格式<br>#	genfromtxt<br>sort 					函数顺序排序axis&#x3D;0为按列<br>argsort 				顺序排序返回下标<br>tile 					对数组进行复制<br>repeat   				对数组元素进行复制<br>mean 					统计数组所有元素的均值（axis&#x3D;0&#x2F;1统计列&#x2F;行均值）<br>max&#x2F;min（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行最大值&#x2F;最小值<br>argmax（axis&#x3D;0&#x2F;1）		找出每列&#x2F;行元素最大值</p>
+<h1 id="一些Matplotlib图像的绘制"><a href="#一些Matplotlib图像的绘制" class="headerlink" title="一些Matplotlib图像的绘制"></a>一些Matplotlib图像的绘制</h1><p>matplotlib.pyplot.scatter 		(x,y,点大小，颜色，点的类型，透明度)</p>
+<p>中文显示<br>plt.rcParams[‘font.sans-serif’]&#x3D;’SimHei’    #设置中文显示<br>plt.rcParams[‘axes.unicode_minus’]&#x3D;False</p>
+<p>绘制折线图<br>matplotlib.pyplot.plot(*args,**kwargs)</p>
+<p>绘制直方图<br>matplotlib.pyplot.bar(x轴取值点left，y坐标取值，柱子的间距，颜色等其他参数)</p>
+<p>绘制饼图<br>matplotlib.pyplot.pie(区域面积，扇形距圆心的距离)</p>
+<h1 id="一些对Pandas库对读文件的内容"><a href="#一些对Pandas库对读文件的内容" class="headerlink" title="一些对Pandas库对读文件的内容"></a>一些对Pandas库对读文件的内容</h1><p>pandas.read_csv				将数据框存储为文本文件<br>数据.to_csv(路径，参数)		读取excel文件</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -243,6 +245,41 @@
       </tags>
   </entry>
   <entry>
+    <title>截至2024/2/20以前的小作文</title>
+    <url>/2024/02/20/%E6%88%AA%E8%87%B32024-2-20%E4%BB%A5%E5%89%8D%E7%9A%84%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
+    <content><![CDATA[<p>截至2024&#x2F;2&#x2F;20以前的小作文<br>悟已往之不谏，知来者之可追。</p>
+ <span id="more"></span>
+
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>2023&#x2F;10&#x2F;14<br>我们虽如沙丁鱼一般随群游荡，但迷茫和不解才是大多数的主旋律，回过头来才发现其实每个人都只是大海中的一叶孤舟。<br>试图将孤独甩在后面，奋力向前奔跑，当你再次停下，陷入迷茫、驻足观望时，它又会追上你。世界上没有永动机，你也不能永远奔跑下去，所以不必苛责自己，我们似乎并不害怕艰难的每一步，却害怕脚下的路不是路。在短暂的缅怀之后，还是要真诚的面对生活啊。</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>2023&#x2F;1&#x2F;13<br> 时间会在我们的身上留下痕迹，生活会埋葬过去的自己，直接地情感突触也会逐渐地不再敏感、断开连接，狐狸有一个简单的秘密：“只有用心才能看见。本质的东西用眼是看不见的。”星空中已不见了星星，就如同仰望夜空的我们也只是在怀念过去。时间和生活会教给我们保持理性，让我们习惯于做出果断而坚决的判断，花儿说：“风把他们一会儿吹到这，一会儿吹到那。他们没有根，活得很辛苦”。我或许已经看不到盒子里的羊了，吃掉大象的蛇大概也已经变成帽子了吧。<br>“正是你为你的玫瑰花费的时光，才使你的玫瑰变得如此重要。”<br>“你的那些星星是谁也不曾见过的……”</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正则表达式相关内容</title>
+    <url>/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<p>对于正则表达式相关内容的学习</p>
+ <span id="more"></span>
+
+<h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p>
+<p>^:开启<br>$:结束（表达验证）</p>
+<p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p>
+<h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p>
+<p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于python实例的学习笔记</title>
     <url>/2024/03/22/%E5%85%B3%E4%BA%8Epython%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>关于python学习的笔记</p>
@@ -271,40 +308,5 @@
       <categories>
         <category>python</category>
       </categories>
-  </entry>
-  <entry>
-    <title>正则表达式相关内容</title>
-    <url>/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</url>
-    <content><![CDATA[<p>对于正则表达式相关内容的学习</p>
- <span id="more"></span>
-
-<h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p>
-<p>^:开启<br>$:结束（表达验证）</p>
-<p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p>
-<h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p>
-<p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>截至2024/2/20以前的小作文</title>
-    <url>/2024/02/20/%E6%88%AA%E8%87%B32024-2-20%E4%BB%A5%E5%89%8D%E7%9A%84%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
-    <content><![CDATA[<p>截至2024&#x2F;2&#x2F;20以前的小作文<br>悟已往之不谏，知来者之可追。</p>
- <span id="more"></span>
-
-<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>2023&#x2F;10&#x2F;14<br>我们虽如沙丁鱼一般随群游荡，但迷茫和不解才是大多数的主旋律，回过头来才发现其实每个人都只是大海中的一叶孤舟。<br>试图将孤独甩在后面，奋力向前奔跑，当你再次停下，陷入迷茫、驻足观望时，它又会追上你。世界上没有永动机，你也不能永远奔跑下去，所以不必苛责自己，我们似乎并不害怕艰难的每一步，却害怕脚下的路不是路。在短暂的缅怀之后，还是要真诚的面对生活啊。</p>
-<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>2023&#x2F;1&#x2F;13<br> 时间会在我们的身上留下痕迹，生活会埋葬过去的自己，直接地情感突触也会逐渐地不再敏感、断开连接，狐狸有一个简单的秘密：“只有用心才能看见。本质的东西用眼是看不见的。”星空中已不见了星星，就如同仰望夜空的我们也只是在怀念过去。时间和生活会教给我们保持理性，让我们习惯于做出果断而坚决的判断，花儿说：“风把他们一会儿吹到这，一会儿吹到那。他们没有根，活得很辛苦”。我或许已经看不到盒子里的羊了，吃掉大象的蛇大概也已经变成帽子了吧。<br>“正是你为你的玫瑰花费的时光，才使你的玫瑰变得如此重要。”<br>“你的那些星星是谁也不曾见过的……”</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
   </entry>
 </search>
