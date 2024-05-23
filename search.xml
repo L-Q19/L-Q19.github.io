@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024java教学实训</title>
+    <url>/2024/05/22/2024java%E6%95%99%E5%AD%A6%E5%AE%9E%E8%AE%AD/</url>
+    <content><![CDATA[<p>2024夏java教学实习</p>
+<span id="more"></span>
+
+
+<p>关于注解<br>依赖注入，对象注入IOC容器<br>Mybatis<br>@Mapper</p>
+<p>Spring<br>@Component  总<br>@Controller controller<br>@Service    service<br>@Repository dao</p>
+<p>spring自动注入<br>@Autowired</p>
+<p>动态SQL<br><if></if><br>用于判断条件是否成立，如果条件为true，则拼接SQL<br><where><br>where元素只会在子元素有内容的情况下才插入where子句，而且会<br>自动去除子句的开头的AND或OR<br><set><br>动态地在行首插入 SET 关键字，并会删掉额外的逗号。（用在<br>update语句中<br><sql><br>定义可重用的SQL片段,抽取相同部分,用id作以标注<br><insert><br>通过属性refid，指定包含的SQL片段</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog的基本使用教程</title>
     <url>/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>blog的基本使用教程</p>
@@ -35,56 +54,13 @@
 <p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 <p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
-<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
+<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt=" &quot;图片出错&quot; "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt=" &quot;图片出错&quot; "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
 ]]></content>
       <categories>
         <category>blog</category>
       </categories>
       <tags>
         <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>javaString</title>
-    <url>/2024/04/27/javaString/</url>
-    <content><![CDATA[<p>关于java String的学习</p>
-<span id="more"></span>
-<h2 id="java-String类"><a href="#java-String类" class="headerlink" title="java String类"></a>java String类</h2><p>求 长度str.length()</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">String str = <span class="string">&quot;abc&quot;</span></span><br><span class="line">str.length()</span><br><span class="line">// 3</span><br></pre></td></tr></table></figure>
-
-<p>字符串比较 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">关注大小写    str1.equals(str2)</span><br><span class="line">不区分大小写  str1.equalsIgnoreCase(str2)</span><br></pre></td></tr></table></figure>
-
-<p>替换</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.replace(<span class="string">&quot;x1&quot;</span>,<span class="string">&quot;x2&quot;</span>)</span><br><span class="line">用x1替换x2生成一个新的字符串</span><br><span class="line">x2不存在不报错</span><br></pre></td></tr></table></figure>
-
-<p>字符串索引</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.charAt</span><br></pre></td></tr></table></figure>
-
-<p>利用索引给字符串切片</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.substring(x,y)</span><br><span class="line">切得str[x,y)</span><br></pre></td></tr></table></figure>
-
-<p>数组强制转换为字符串</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">int[] arr = new int[]&#123;&#125;</span><br><span class="line">String str = arrToString(arr)</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="StringBuilder类"><a href="#StringBuilder类" class="headerlink" title="StringBuilder类"></a>StringBuilder类</h2><p>一个操作字符的容器本身并不是String<br>在字符串拼接和反转非常有效</p>
-<p>构造方法</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringBuilder sb=new StringBuilder()</span><br><span class="line">参数可以默认最初容器内容</span><br></pre></td></tr></table></figure>
-
-
-<p>添加</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.append(str)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>反转</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.reverse()</span><br></pre></td></tr></table></figure>
-
-<h2 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h2><p>JDK8开始出现，用于字符串拼接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringJoiner sj = new StringJoiner()</span><br><span class="line">参数为 (间隔符号,开始符号,结束符号)</span><br><span class="line">sj.add()  添加元素      </span><br><span class="line">toString  转换为字符串</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -129,6 +105,49 @@
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>javaString</title>
+    <url>/2024/04/27/javaString/</url>
+    <content><![CDATA[<p>关于java String的学习</p>
+<span id="more"></span>
+<h2 id="java-String类"><a href="#java-String类" class="headerlink" title="java String类"></a>java String类</h2><p>求 长度str.length()</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">String str = <span class="string">&quot;abc&quot;</span></span><br><span class="line">str.length()</span><br><span class="line">// 3</span><br></pre></td></tr></table></figure>
+
+<p>字符串比较 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">关注大小写    str1.equals(str2)</span><br><span class="line">不区分大小写  str1.equalsIgnoreCase(str2)</span><br></pre></td></tr></table></figure>
+
+<p>替换</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.replace(<span class="string">&quot;x1&quot;</span>,<span class="string">&quot;x2&quot;</span>)</span><br><span class="line">用x1替换x2生成一个新的字符串</span><br><span class="line">x2不存在不报错</span><br></pre></td></tr></table></figure>
+
+<p>字符串索引</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.charAt</span><br></pre></td></tr></table></figure>
+
+<p>利用索引给字符串切片</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">str.substring(x,y)</span><br><span class="line">切得str[x,y)</span><br></pre></td></tr></table></figure>
+
+<p>数组强制转换为字符串</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">int[] arr = new int[]&#123;&#125;</span><br><span class="line">String str = arrToString(arr)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="StringBuilder类"><a href="#StringBuilder类" class="headerlink" title="StringBuilder类"></a>StringBuilder类</h2><p>一个操作字符的容器本身并不是String<br>在字符串拼接和反转非常有效</p>
+<p>构造方法</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringBuilder sb=new StringBuilder()</span><br><span class="line">参数可以默认最初容器内容</span><br></pre></td></tr></table></figure>
+
+
+<p>添加</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.append(str)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>反转</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sb.reverse()</span><br></pre></td></tr></table></figure>
+
+<h2 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h2><p>JDK8开始出现，用于字符串拼接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">StringJoiner sj = new StringJoiner()</span><br><span class="line">参数为 (间隔符号,开始符号,结束符号)</span><br><span class="line">sj.add()  添加元素      </span><br><span class="line">toString  转换为字符串</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -224,41 +243,6 @@
       </tags>
   </entry>
   <entry>
-    <title>截至2024/2/20以前的小作文</title>
-    <url>/2024/02/20/%E6%88%AA%E8%87%B32024-2-20%E4%BB%A5%E5%89%8D%E7%9A%84%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
-    <content><![CDATA[<p>截至2024&#x2F;2&#x2F;20以前的小作文<br>悟已往之不谏，知来者之可追。</p>
- <span id="more"></span>
-
-<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>2023&#x2F;10&#x2F;14<br>我们虽如沙丁鱼一般随群游荡，但迷茫和不解才是大多数的主旋律，回过头来才发现其实每个人都只是大海中的一叶孤舟。<br>试图将孤独甩在后面，奋力向前奔跑，当你再次停下，陷入迷茫、驻足观望时，它又会追上你。世界上没有永动机，你也不能永远奔跑下去，所以不必苛责自己，我们似乎并不害怕艰难的每一步，却害怕脚下的路不是路。在短暂的缅怀之后，还是要真诚的面对生活啊。</p>
-<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>2023&#x2F;1&#x2F;13<br> 时间会在我们的身上留下痕迹，生活会埋葬过去的自己，直接地情感突触也会逐渐地不再敏感、断开连接，狐狸有一个简单的秘密：“只有用心才能看见。本质的东西用眼是看不见的。”星空中已不见了星星，就如同仰望夜空的我们也只是在怀念过去。时间和生活会教给我们保持理性，让我们习惯于做出果断而坚决的判断，花儿说：“风把他们一会儿吹到这，一会儿吹到那。他们没有根，活得很辛苦”。我或许已经看不到盒子里的羊了，吃掉大象的蛇大概也已经变成帽子了吧。<br>“正是你为你的玫瑰花费的时光，才使你的玫瑰变得如此重要。”<br>“你的那些星星是谁也不曾见过的……”</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正则表达式相关内容</title>
-    <url>/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</url>
-    <content><![CDATA[<p>对于正则表达式相关内容的学习</p>
- <span id="more"></span>
-
-<h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p>
-<p>^:开启<br>$:结束（表达验证）</p>
-<p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p>
-<h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p>
-<p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于python实例的学习笔记</title>
     <url>/2024/03/22/%E5%85%B3%E4%BA%8Epython%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>关于python学习的笔记</p>
@@ -287,5 +271,40 @@
       <categories>
         <category>python</category>
       </categories>
+  </entry>
+  <entry>
+    <title>正则表达式相关内容</title>
+    <url>/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<p>对于正则表达式相关内容的学习</p>
+ <span id="more"></span>
+
+<h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p>
+<p>^:开启<br>$:结束（表达验证）</p>
+<p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p>
+<h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p>
+<p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>截至2024/2/20以前的小作文</title>
+    <url>/2024/02/20/%E6%88%AA%E8%87%B32024-2-20%E4%BB%A5%E5%89%8D%E7%9A%84%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
+    <content><![CDATA[<p>截至2024&#x2F;2&#x2F;20以前的小作文<br>悟已往之不谏，知来者之可追。</p>
+ <span id="more"></span>
+
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>2023&#x2F;10&#x2F;14<br>我们虽如沙丁鱼一般随群游荡，但迷茫和不解才是大多数的主旋律，回过头来才发现其实每个人都只是大海中的一叶孤舟。<br>试图将孤独甩在后面，奋力向前奔跑，当你再次停下，陷入迷茫、驻足观望时，它又会追上你。世界上没有永动机，你也不能永远奔跑下去，所以不必苛责自己，我们似乎并不害怕艰难的每一步，却害怕脚下的路不是路。在短暂的缅怀之后，还是要真诚的面对生活啊。</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>2023&#x2F;1&#x2F;13<br> 时间会在我们的身上留下痕迹，生活会埋葬过去的自己，直接地情感突触也会逐渐地不再敏感、断开连接，狐狸有一个简单的秘密：“只有用心才能看见。本质的东西用眼是看不见的。”星空中已不见了星星，就如同仰望夜空的我们也只是在怀念过去。时间和生活会教给我们保持理性，让我们习惯于做出果断而坚决的判断，花儿说：“风把他们一会儿吹到这，一会儿吹到那。他们没有根，活得很辛苦”。我或许已经看不到盒子里的羊了，吃掉大象的蛇大概也已经变成帽子了吧。<br>“正是你为你的玫瑰花费的时光，才使你的玫瑰变得如此重要。”<br>“你的那些星星是谁也不曾见过的……”</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
   </entry>
 </search>
