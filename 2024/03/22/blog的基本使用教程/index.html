@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="blog的基本使用教程 关于给健忘症患者的一个警醒">
+  <meta name="description" content="blog基本使用方法blog博客的基本编写命令关于给健忘症患者的一个警醒">
 <meta property="og:type" content="article">
 <meta property="og:title" content="blog的基本使用教程">
 <meta property="og:url" content="http://example.com/2024/03/22/blog%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="blog的基本使用教程 关于给健忘症患者的一个警醒">
+<meta property="og:description" content="blog基本使用方法blog博客的基本编写命令关于给健忘症患者的一个警醒">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-22T12:20:34.000Z">
-<meta property="article:modified_time" content="2024-03-22T12:27:17.468Z">
+<meta property="article:modified_time" content="2026-06-20T10:02:30.192Z">
 <meta property="article:author" content="L-Q19">
 <meta name="twitter:card" content="summary">
 
@@ -216,10 +216,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-03-22 20:20:34 / 修改时间：20:27:17" itemprop="dateCreated datePublished" datetime="2024-03-22T20:20:34+08:00">2024-03-22</time>
+              <time title="创建时间：2024-03-22 20:20:34" itemprop="dateCreated datePublished" datetime="2024-03-22T20:20:34+08:00">2024-03-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-06-20 18:02:30" itemprop="dateModified" datetime="2026-06-20T18:02:30+08:00">2026-06-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -241,8 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>blog的基本使用教程</p>
-<p>关于给健忘症患者的一个警醒</p>
+        <h1 id="blog基本使用方法"><a href="#blog基本使用方法" class="headerlink" title="blog基本使用方法"></a>blog基本使用方法</h1><h2 id="blog博客的基本编写命令"><a href="#blog博客的基本编写命令" class="headerlink" title="blog博客的基本编写命令"></a>blog博客的基本编写命令</h2><p>关于给健忘症患者的一个警醒</p>
 <span id="more"></span>
 
 <p>创建一个新的post类型blog</p>
@@ -254,6 +259,50 @@
 <p>其上分别为 清除静态文件<br>生成静态文件<br>重新部署</p>
 <p>另外有本地预览模式</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="markdown的基本语法"><a href="#markdown的基本语法" class="headerlink" title="markdown的基本语法"></a>markdown的基本语法</h2><p>（对markdown教程的学习）</p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>1.’#’ 代表标题，’#’的数量代表几级标题，1为最大。</p>
+<p>2.也有’&#x3D;&#x3D;&#x3D;’和’—-‘的表示方法，任意’&#x3D;’代表一级标题，’-‘代表二级标题</p>
+<h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><p>段落使用空白行来分割</p>
+<h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><p>在语句结尾使用空格标签来换行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&lt;br&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="强调语法"><a href="#强调语法" class="headerlink" title="强调语法"></a>强调语法</h3><p>1.粗体</p>
+<p>在语句前后使用两个星号</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;*&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>2.斜体</p>
+<p>在语句前后使用一个星号</p>
+<p>3.同时添加粗体斜体</p>
+<p>在语句前后使用三个星号</p>
+<h3 id="应用块语法"><a href="#应用块语法" class="headerlink" title="应用块语法"></a>应用块语法</h3><p>使用大于号来表是</p>
+<blockquote>
+<p>效果展示<br>也可以用大于号来进行段落分割<br>效果展示</p>
+<p>效果展示</p>
+</blockquote>
+<p>引用块嵌套使用两个大于号表示</p>
+<blockquote>
+<p>效果展示</p>
+<blockquote>
+<p>嵌套内容</p>
+</blockquote>
+</blockquote>
+<p>大于号是竖杠效果，用减号表示点的效果</p>
+<blockquote>
+<ul>
+<li>效果展示</li>
+</ul>
+</blockquote>
+<h3 id="链接语法"><a href="#链接语法" class="headerlink" title="链接语法"></a>链接语法</h3><blockquote>
+<p><a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="超链接title">超链接显示名</a></p>
+</blockquote>
+<p>【显示字】（实际链接 ‘悬停显示字’）<br>即方括号 大括号 包含单引号</p>
+<p>也可以直接使用&lt;url或者邮箱地址&gt;</p>
+<h3 id="图片语法"><a href="#图片语法" class="headerlink" title="图片语法"></a>图片语法</h3><p>感叹号方括号大括号中分别包含内容是！【图片alt】（图片地址 “悬停显示字”）</p>
+<p>也可以【！【图片alt】（图片地址 “悬停显示字”）】（包含链接）</p>
+
     </div>
 
     
@@ -389,6 +438,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#blog%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">blog基本使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#blog%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BC%96%E5%86%99%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.</span> <span class="nav-text">blog博客的基本编写命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">markdown的基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">1.2.1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AE%B5%E8%90%BD"><span class="nav-number">1.2.2.</span> <span class="nav-text">段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8D%A2%E8%A1%8C"><span class="nav-number">1.2.3.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%BA%E8%B0%83%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.4.</span> <span class="nav-text">强调语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%9D%97%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.5.</span> <span class="nav-text">应用块语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.6.</span> <span class="nav-text">链接语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.7.</span> <span class="nav-text">图片语法</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
