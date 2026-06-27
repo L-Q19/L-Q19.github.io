@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="希望虾没事">
+<meta property="og:type" content="article">
+<meta property="og:title" content="openclaw调教日记">
+<meta property="og:url" content="http://example.com/2026/06/20/openclaw%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/index.html">
+<meta property="og:site_name" content="MyBlog">
+<meta property="og:description" content="希望虾没事">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-06-20T10:07:29.000Z">
+<meta property="article:modified_time" content="2026-06-21T14:03:37.123Z">
+<meta property="article:author" content="L-Q19">
+<meta property="article:tag" content="ai引擎">
+<meta property="article:tag" content="model">
+<meta property="article:tag" content="agent">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2026/06/20/openclaw%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>openclaw调教日记 | MyBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="MyBlog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">MyBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/06/20/openclaw%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="L-Q19">
+      <meta itemprop="description" content="We are all in the gutter.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MyBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          openclaw调教日记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2026-06-20 18:07:29" itemprop="dateCreated datePublished" datetime="2026-06-20T18:07:29+08:00">2026-06-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-06-21 22:03:37" itemprop="dateModified" datetime="2026-06-21T22:03:37+08:00">2026-06-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">AI学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>希望虾没事</p>
+<span id="more"></span>
+<h1 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h1><p>做好了部署准备:git、nodejs、ubuntu24安装完毕<br><br>通过宿主机访问WMware虚拟机的ubuntu网关成功安装openclaw<br><br>并连接大模型deepseek4.0且接入飞书进行使用（deepseek充值3人民币）<br><br>进度可谓非常顺利</p>
+<h1 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h1><p>准备制作公交出门自动提示功能<br><br>在此基础上了解到了如下内容<br>1.openclaw可以使用python环境下的browser-use库来进行直接操作浏览器<br>2.可以通过对浏览器的操作做到对实时公交进行截图然后通过飞书发送到我的手机上，交给他我的到达站点预计时间由此可以得到合理出门时间。<br>3.通过broser操作浏览器需要对浏览器进行配置，但我们可以通过playwright中的chromium浏览器来实现直接接入（同使用chrome内核）</p>
+<p>在今天我们成功下载了playwright以及他所携带的chromium<br>但最后一个144mb的包没有下载好，就是这个（headless-shell）但目前看来并没有什么影响</p>
+<h1 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h1><p>了解到想要进行浏览器操作可以使用更简便的方法，在chrome144版本更新后内置的MCP协议更强大了，openclaw2026.3.13版本他更是直接拥有browser功能<br>我们直接打开chromium的测试远程连接端口 </p>
+<blockquote>
+<p>在这里 chrome:&#x2F;&#x2F;inspect&#x2F;#remote-debugging</p>
+</blockquote>
+<p>然后我们直接在配置文件openclaw.json修改就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">【browser: &#123;</span><br><span class="line">    enabled: true,</span><br><span class="line">    defaultProfile: &#x27;user&#x27;,</span><br><span class="line">    profiles: &#123;</span><br><span class="line">      user: &#123;</span><br><span class="line">        cdpPort: 9222,</span><br><span class="line">        driver: &#x27;existing-session&#x27;,</span><br><span class="line">        color: &#x27;#ff5240&#x27;,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  tools: &#123;</span><br><span class="line">    profile: &#x27;full&#x27;,</span><br><span class="line">  &#125;,】</span><br></pre></td></tr></table></figure>
+
+<p>然后重启 OpenClaw </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openclaw gateway restart</span><br></pre></td></tr></table></figure>
+
+<p>查看状态，并且同步激活浏览器，这是浏览器会弹窗请求运行控制</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openclaw browser status</span><br></pre></td></tr></table></figure>
+<p>简直完美直接就是一个配置成功</p>
+<p>后来我们依旧成功，期间进行了browser的配置以及playwright+chromium有所差异的配对设置<br>并且测试了他启动浏览器和测试页面，并手动使用了截图功能。均成功。</p>
+<p>本来想直接在ubuntu部署，但是得知VMware不能直接使用GPU来进行计算故作罢决定在宿主机部署<br>23点56分测试飞书传截图已经成功了（续费deepseek3元）</p>
+<h1 id="day4"><a href="#day4" class="headerlink" title="day4"></a>day4</h1><p>今天进行了本地ollama的配置，续费了机场（消费30元），成功部署ollama和qwen3.5：4b，成功配置了宿主机和虚拟机的通信。<br>但是接入openclaw后效果不尽人意</p>
+<p>整理今天的操作</p>
+<p>1.下载ollama（使用科学上网完成）<br>将ollama的主程序和模型存放位置进行了修改。并配置了两个环境变量【a.主程序在用户配置 b.模型在系统配置到.model的文件夹】</p>
+<p>2.打通虚拟机和宿主机的连接<br>进行了入网协议的新增，开放了openclaw对ollama端口的访问（在系统环境变量写入了ollama的端口）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────────────────┐</span><br><span class="line">│  Win11 宿主机                                     │</span><br><span class="line">│  ┌─────────────────────────────────────────────┐    │        </span><br><span class="line">│  │  Ollama (监听 0.0.0.0:11434)               │    │</span><br><span class="line">│  │  模型: qwen3.5:4b                         │    │</span><br><span class="line">│  └─────────────────────────────────────────────┘    │</span><br><span class="line">│         ↑ 只允许 Ubuntu IP 访问 (防火墙限定)        │</span><br><span class="line">│         │                                           │</span><br><span class="line">│  VMware NAT 网络 (VMnet8: 192.xxx.xxx.0/24)        │</span><br><span class="line">│         │                                           │</span><br><span class="line">│  ┌─────────────────────────────────────────────┐    │</span><br><span class="line">│  │  Ubuntu 虚拟机                              │    │</span><br><span class="line">│  │  ┌─────────────────────────────────────┐    │    │</span><br><span class="line">│  │  │  OpenClaw                           │    │    │</span><br><span class="line">│  │  │  API 指向: http://192.xxx.xxx.1:11434│    │    │</span><br><span class="line">│  │  └─────────────────────────────────────┘    │    │</span><br><span class="line">│  └─────────────────────────────────────────────┘    │</span><br><span class="line">└─────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>3.配置openclaw接入本地qwen3.5：4b 直接使用他的引导程序.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openclaw onboard	</span><br></pre></td></tr></table></figure>
+<p>是openclaw的交互式引导配置，通过引导,完成 Gateway、模型、工作区、渠道等所有核心配置。</p>
+<p>顺带一提，这个是斩杀ollama的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM ollama.exe</span><br></pre></td></tr></table></figure>
+<p>然后现在发现问题了openclaw接入后只能回复我两个字（准确来说应该是NO或者不行）<br>这个在调整了几次上下文设置之后还是存在问题，只能明天看能不能再下一个模型或者看他还有没有其他的配置来解决这个问题了。</p>
+<h1 id="day5"><a href="#day5" class="headerlink" title="day5"></a>day5</h1><p>查阅ollama官方文档结合测试内容来看</p>
+<p>1.ollama官方文档有内容：</p>
+<p>Ollama 的 API 响应包含可用于衡量性能和模型使用情况的指标<br>total_duration：生成响应所花费的总时间<br>load_duration：加载模型所花费的时间<br>prompt_eval_count：处理的输入 token 数量<br>prompt_eval_duration：评估提示词所花费的时间<br>eval_count：处理的输出 token 数量<br>eval_duration：生成输出 token 所花费的时间<br>所有时间值均以纳秒为单位测量。</p>
+<p>2.在虚拟机使用直接访问ollama的形式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">curl http://192.xxx.xxx.xxx:11434/api/chat -d <span class="string">&#x27;&#123;</span></span><br><span class="line"><span class="string">  &quot;model&quot;: &quot;qwen3.5:4b&quot;,</span></span><br><span class="line"><span class="string">  &quot;messages&quot;: [&#123;&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;回复“你好”这两个字&quot;&#125;],</span></span><br><span class="line"><span class="string">  &quot;stream&quot;: false,</span></span><br><span class="line"><span class="string">  &quot;options&quot;: &#123;</span></span><br><span class="line"><span class="string">    &quot;num_predict&quot;: 50,</span></span><br><span class="line"><span class="string">    &quot;stop&quot;: []</span></span><br><span class="line"><span class="string">  &#125;</span></span><br></pre></td></tr></table></figure>
+<p>得到以下内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;model&quot;</span>:<span class="string">&quot;qwen3.5:4b&quot;</span>,<span class="string">&quot;created_at&quot;</span>:<span class="string">&quot;2026-06-18T15:21:59.4173732Z&quot;</span>,<span class="string">&quot;message&quot;</span>:&#123;<span class="string">&quot;role&quot;</span>:<span class="string">&quot;assistant&quot;</span>,<span class="string">&quot;content&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;thinking&quot;</span>:<span class="string">&quot;Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: \&quot;回复“你好”这两个字\&quot; (Reply with these two characters \&quot;Hello\&quot;).\n    *   Task: I need to output exactly or essentially just&quot;</span>&#125;,<span class="string">&quot;done&quot;</span>:<span class="literal">true</span>,<span class="string">&quot;done_reason&quot;</span>:<span class="string">&quot;length&quot;</span>,<span class="string">&quot;total_duration&quot;</span>:3609195200,<span class="string">&quot;load_duration&quot;</span>:3206617700,<span class="string">&quot;prompt_eval_count&quot;</span>:16,<span class="string">&quot;prompt_eval_duration&quot;</span>:90679000,<span class="string">&quot;eval_count&quot;</span>:50,<span class="string">&quot;eval_duration&quot;</span>:309606000&#125;</span><br></pre></td></tr></table></figure>
+
+<p>提取以下内容<br>“content”:””             发现回复为空<br>done_reason”:”length”    意为模型生成的内容因达到最大长度限制而被截断。</p>
+<p>由此我们可以得出结论，是qwen3.5的思考内容太过冗长，达到了token最大限制，没有返回给openclaw答案。<br>经过验证也发现，直接使用ollama来与qwen3.5：4b对话也常常在思考时中断没有回复给我们结果。</p>
+<p>目前不清楚是ollama配置问题还是openclaw配置问题</p>
+<p>得到以下两个方案，关掉千问的思考模式，但在初步尝试修改openclaw的参数，没有起到效果。<br>现有两个想法，一是qwen3.5：4b这个模型本身不支持关闭思考模式，它原本就是思考模型。二是在openclaw进行设置不能起到作用。</p>
+<p>后又使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">curl http://192.xxx.xxx.xxx:11434/api/chat -d <span class="string">&#x27;&#123;</span></span><br><span class="line"><span class="string">  &quot;model&quot;: &quot;qwen3.5:9b&quot;,</span></span><br><span class="line"><span class="string">  &quot;messages&quot;: [&#123;&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，请简短介绍自己&quot;&#125;],</span></span><br><span class="line"><span class="string">  &quot;stream&quot;: false,</span></span><br><span class="line"><span class="string">  &quot;options&quot;: &#123;</span></span><br><span class="line"><span class="string">    &quot;num_predict&quot;: 100,</span></span><br><span class="line"><span class="string">    &quot;no_think&quot;: true</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<p>在访问中直接添加no_think参数依然会失败。我们或许只能选择放弃qwen3.5这个模型了?</p>
+<h1 id="day6"><a href="#day6" class="headerlink" title="day6"></a>day6</h1><p>下载了qwen3.5：9b和4b的版本，通过一些列的调试<br>（添加think_no等参数或者加大maxTokens的量，都没办法解决content&#x3D;空的问题）<br>结果均失败，有两个方向的怀疑，1.ollama的封装问题 2.qwen3.5模型的设置问题</p>
+<p>并且在尝试中也试着添加参数然后重新构建一个不思考的qwen，但结果依旧失败。尝试步骤如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ollama show qwen3.5:9b --modelfile &gt; Modelfile_qwen35_notthink.txt    导出千问的模型文件为txt</span><br><span class="line">notepad Modelfile_qwen35_notthink.txt                                 编辑该文件尝试添加参数  PARAMETER think <span class="literal">false</span>       </span><br><span class="line">ollama create qwen35-nothink -f Modelfile_qwen35_notthink.txt         通过txt创建新的模型</span><br></pre></td></tr></table></figure>
+<p>到第三步就识别不到 think 这个参数了，计划破产说是</p>
+<p>只能用折中的办法，在每次和他聊天的时候都要使用think off 的指令，才能让他短暂的回话。<br>但这个程度还远远不够，他只有deepseek4pro一半的能力。<br>接入deepseek，让他从本地发文件和浏览器用了不到二十分钟。<br>但qwen3.5：9b还是太局限了。抑或是我的显卡太弱小了，根本无法带的动这样的工具，<br>让他给我发文字需要重新开一个会话，让他给我发txt文件他也只能把简短的内容发给我，文件始终成功不了<br>而且会话长了他就会忘掉上下文或者每句话都只说一半，我怀疑是显存爆了。期间显卡占用率甚至达到了惊人的百分百<br>如果只是对话模型我不如直接使用免费对话模型不是吗？<br>难道本地部署大模型是骗局吗？付费cloud模型才是真相啊…<br>（或者是ollama限制了模型的能力？其实他应该还是挺强的？换个模型再试试吧？）</p>
+<p>顺带一提：qwen3.5关闭思考的参数应该是 “enable_thinking”:false<br>但存在一个问题，他的think部分依旧有内容，只是做了调度让他不至于回复（content）一个空值</p>
+
+    </div>
+
+    
+    
+    
+
+    
+      <div>
+     <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>L-Q19
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2026/06/20/openclaw%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/" title="openclaw调教日记">http://example.com/2026/06/20/openclaw调教日记/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai%E5%BC%95%E6%93%8E/" rel="tag"># ai引擎</a>
+              <a href="/tags/model/" rel="tag"># model</a>
+              <a href="/tags/agent/" rel="tag"># agent</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/05/22/2024java%E6%95%99%E5%AD%A6%E5%AE%9E%E8%AE%AD/" rel="prev" title="2024java教学实训">
+      <i class="fa fa-chevron-left"></i> 2024java教学实训
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2026/06/21/llama%E9%83%A8%E7%BD%B2%E5%92%8C%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8/" rel="next" title="llama部署和模型使用">
+      llama部署和模型使用 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#day1"><span class="nav-number">1.</span> <span class="nav-text">day1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#day2"><span class="nav-number">2.</span> <span class="nav-text">day2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#day3"><span class="nav-number">3.</span> <span class="nav-text">day3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#day4"><span class="nav-number">4.</span> <span class="nav-text">day4</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#day5"><span class="nav-number">5.</span> <span class="nav-text">day5</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#day6"><span class="nav-number">6.</span> <span class="nav-text">day6</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="L-Q19"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">L-Q19</p>
+  <div class="site-description" itemprop="description">We are all in the gutter.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/L-Q19" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;L-Q19" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/L1277409832@163.com" title="E-Mail → L1277409832@163.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2024 – 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">L-Q19</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://github.com/AdingApkgg/gitcalendar?L-Q19";
+            var git_color =['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06'];
+            var git_user ="L-Q19";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body>
+</html>
