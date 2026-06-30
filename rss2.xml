@@ -28,9 +28,9 @@
       <category domain="http://example.com/categories/AI%E5%AD%A6%E4%B9%A0/">AI学习</category>
       
       
-      <category domain="http://example.com/tags/model/">model</category>
-      
       <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
+      
+      <category domain="http://example.com/tags/model/">model</category>
       
       
       <comments>http://example.com/2026/06/21/llama%E9%83%A8%E7%BD%B2%E5%92%8C%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
@@ -53,11 +53,11 @@
       <category domain="http://example.com/categories/AI%E5%AD%A6%E4%B9%A0/">AI学习</category>
       
       
-      <category domain="http://example.com/tags/agent/">agent</category>
+      <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
       
       <category domain="http://example.com/tags/model/">model</category>
       
-      <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
+      <category domain="http://example.com/tags/agent/">agent</category>
       
       
       <comments>http://example.com/2026/06/20/openclaw%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/#disqus_thread</comments>
