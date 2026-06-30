@@ -133,6 +133,35 @@
       </categories>
   </entry>
   <entry>
+    <title>first blog</title>
+    <url>/2024/01/20/first-blog/</url>
+    <content><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p>
+ <span id="more"></span>
+
+<h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure>
+
+<p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
+
+<p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
+<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt="  "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt="  "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Agent学习日记</title>
+    <url>/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/01/15/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -151,6 +180,50 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>llama部署和模型使用</title>
+    <url>/2026/06/21/llama%E9%83%A8%E7%BD%B2%E5%92%8C%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>llama部署和模型使用</p>
+<span id="more"></span>
+
+<h1 id="llama下载"><a href="#llama下载" class="headerlink" title="llama下载"></a>llama下载</h1><p>如果不是集显的方式就肯定有Nvidia驱动</p>
+<p>如果使用的是Game Ready的版本，那就必然缺少CUDA Toolkit工具包</p>
+<p>可以先去llama官网</p>
+<blockquote>
+<p><a href="https://llama-cpp.com/download/%E3%80%81">https://llama-cpp.com/download/、</a></p>
+</blockquote>
+<p>查看需要CUDA的哪个版本，在终端输入 <code>nvidia-smi</code> 看你目前驱动支持到哪个版本<br>如果不符合可以先更新显卡驱动，然后在去英伟达官网下载对应的CUDA Toolkit工具包<br>可以使用 <code>nvcc --version</code> 命令来查看安装的cuda版本（即release 后的数字）<br>（系统会自动配置系统环境变量名为CUDA的都是）</p>
+<p>下载好后，将下载解压后的文件根目录路径写进用户环境变量PATH中</p>
+<p>然后就可以去终端查询是否配置成功 <code>llama-cli</code><br>正常会输出</p>
+<blockquote>
+<p>error： –model is required</p>
+</blockquote>
+<h1 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h1><p>可以直接访问 Hugging Face 来下载</p>
+<p>也可以使用国内镜像站</p>
+<blockquote>
+<p><a href="https://hf-mirror.com/">https://hf-mirror.com/</a></p>
+</blockquote>
+<p>模型后缀为 .gguf 可以完美适配llama</p>
+<p>可以把模型直接放到llama根目录下方便调用</p>
+<p>然后进入根目录路径下的终端</p>
+<blockquote>
+<p>llama-cli -m 模型文件名\</p>
+</blockquote>
+<p>使用该命令进行直接在终端进行调用启动</p>
+<p>也可以使用</p>
+<blockquote>
+<p>llama-server -m 模型文件名</p>
+</blockquote>
+<p>来将其作为服务供其他程序调用（默认端口为 8080）</p>
+]]></content>
+      <categories>
+        <category>AI学习</category>
+      </categories>
+      <tags>
+        <tag>ai引擎</tag>
+        <tag>LLM</tag>
+      </tags>
   </entry>
   <entry>
     <title>javaString_And_javaArrayList</title>
@@ -205,74 +278,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>llama部署和模型使用</title>
-    <url>/2026/06/21/llama%E9%83%A8%E7%BD%B2%E5%92%8C%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>llama部署和模型使用</p>
-<span id="more"></span>
-
-<h1 id="llama下载"><a href="#llama下载" class="headerlink" title="llama下载"></a>llama下载</h1><p>如果不是集显的方式就肯定有Nvidia驱动</p>
-<p>如果使用的是Game Ready的版本，那就必然缺少CUDA Toolkit工具包</p>
-<p>可以先去llama官网</p>
-<blockquote>
-<p><a href="https://llama-cpp.com/download/%E3%80%81">https://llama-cpp.com/download/、</a></p>
-</blockquote>
-<p>查看需要CUDA的哪个版本，在终端输入 <code>nvidia-smi</code> 看你目前驱动支持到哪个版本<br>如果不符合可以先更新显卡驱动，然后在去英伟达官网下载对应的CUDA Toolkit工具包<br>可以使用 <code>nvcc --version</code> 命令来查看安装的cuda版本（即release 后的数字）<br>（系统会自动配置系统环境变量名为CUDA的都是）</p>
-<p>下载好后，将下载解压后的文件根目录路径写进用户环境变量PATH中</p>
-<p>然后就可以去终端查询是否配置成功 <code>llama-cli</code><br>正常会输出</p>
-<blockquote>
-<p>error： –model is required</p>
-</blockquote>
-<h1 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h1><p>可以直接访问 Hugging Face 来下载</p>
-<p>也可以使用国内镜像站</p>
-<blockquote>
-<p><a href="https://hf-mirror.com/">https://hf-mirror.com/</a></p>
-</blockquote>
-<p>模型后缀为 .gguf 可以完美适配llama</p>
-<p>可以把模型直接放到llama根目录下方便调用</p>
-<p>然后进入根目录路径下的终端</p>
-<blockquote>
-<p>llama-cli -m 模型文件名\</p>
-</blockquote>
-<p>使用该命令进行直接在终端进行调用启动</p>
-<p>也可以使用</p>
-<blockquote>
-<p>llama-server -m 模型文件名</p>
-</blockquote>
-<p>来将其作为服务供其他程序调用（默认端口为 8080）</p>
-]]></content>
-      <categories>
-        <category>AI学习</category>
-      </categories>
-      <tags>
-        <tag>ai引擎</tag>
-        <tag>model</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>first blog</title>
-    <url>/2024/01/20/first-blog/</url>
-    <content><![CDATA[<p>关于在第一次创建博客页面中产生的问题。</p>
- <span id="more"></span>
-
-<h2 id="关于几个报错"><a href="#关于几个报错" class="headerlink" title="关于几个报错"></a>关于几个报错</h2><h3 id="报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out"><a href="#报错信息：ssh-connect-to-host-github-com-port-22-Connection-timed-out" class="headerlink" title="报错信息：ssh:connect to host github.com port 22: Connection timed out"></a>报错信息：ssh:connect to host github.com port 22: Connection timed out</h3><p>于Git连接GitHub时出现的问题，有可能是两方面的问题，首先是端口号无法连接，我们更改端口。<br>在git密钥目录下创建文件config</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> config</span><br></pre></td></tr></table></figure>
-
-<p>这里需要用命令创建，该文件没有后缀<br>创建之后写入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User git</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
-
-<p>其次是密钥的问题<br>重新创建密钥并在GitHub上新建连接<br>创建密钥</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
-<p>在win10上的路径： C:&#x2F;Users&#x2F;ASUS&#x2F;.ssh<br>在mac：<del>&#x2F;.ssh<br>在linux：</del>&#x2F;.ssh</p>
-<p>找到id_rsa.pub，复制其内容<br>在GitHub的设置（settings）中建立新链接New SSH key<br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A51.jpg" alt="  "><br><img src="/2024/01/20/first-blog/github%E6%96%B0%E5%BB%BA%E8%BF%9E%E6%8E%A52.png" alt="  "><br>在上述进行后<br>在git Bash中输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;</a> 进行检验<br>问题中填入yes，若出现”hi！ you_usename……”表明成功</p>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -338,8 +343,8 @@
       </categories>
       <tags>
         <tag>ai引擎</tag>
-        <tag>model</tag>
         <tag>agent</tag>
+        <tag>model</tag>
       </tags>
   </entry>
   <entry>

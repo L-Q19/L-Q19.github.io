@@ -9,8 +9,23 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Sun, 21 Jun 2026 14:03:31 GMT</pubDate>
+    <pubDate>Tue, 30 Jun 2026 13:56:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Agent学习日记</title>
+      <link>http://example.com/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/</link>
+      <guid>http://example.com/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/</guid>
+      <pubDate>Tue, 30 Jun 2026 13:56:52 GMT</pubDate>
+      
+      
+      
+      
+      
+      
+      <comments>http://example.com/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>llama部署和模型使用</title>
@@ -30,7 +45,7 @@
       
       <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
       
-      <category domain="http://example.com/tags/model/">model</category>
+      <category domain="http://example.com/tags/LLM/">LLM</category>
       
       
       <comments>http://example.com/2026/06/21/llama%E9%83%A8%E7%BD%B2%E5%92%8C%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
@@ -55,9 +70,9 @@
       
       <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
       
-      <category domain="http://example.com/tags/model/">model</category>
-      
       <category domain="http://example.com/tags/agent/">agent</category>
+      
+      <category domain="http://example.com/tags/model/">model</category>
       
       
       <comments>http://example.com/2026/06/20/openclaw%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/#disqus_thread</comments>
@@ -219,29 +234,6 @@
       
       
       <comments>http://example.com/2024/02/20/%E6%88%AA%E8%87%B32024-2-20%E4%BB%A5%E5%89%8D%E7%9A%84%E5%B0%8F%E4%BD%9C%E6%96%87/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>正则表达式相关内容</title>
-      <link>http://example.com/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</link>
-      <guid>http://example.com/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</guid>
-      <pubDate>Sat, 20 Jan 2024 11:57:43 GMT</pubDate>
-      
-      <description>&lt;p&gt;对于正则表达式相关内容的学习&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>对于正则表达式相关内容的学习</p> <span id="more"></span><h1 id="元字符-具有固定含义的特殊符号"><a href="#元字符-具有固定含义的特殊符号" class="headerlink" title="元字符:具有固定含义的特殊符号"></a>元字符:具有固定含义的特殊符号</h1><p>. ：匹配除换行符以外全部字符<br>\w:匹配所有数字、字母、下划线（如邮箱）<br>\s:任意空字符（使用少）<br>\d:匹配数字<br>\n:所有换行符<br>\t:匹配制表符</p><p>^:开启<br>$:结束（表达验证）</p><p>\W   \S   \D：类似反义词<br>a|b：或<br>():组<br>[ ]:字符组，支持[A-Za-z0-9]，[^]意为非</p><h1 id="量词-控制元字符出现的次数"><a href="#量词-控制元字符出现的次数" class="headerlink" title="量词:控制元字符出现的次数"></a>量词:控制元字符出现的次数</h1><p>（）*：出现0次或更多次<br>（）+：出现一次或更多次<br>（）？：出现一次或者不出现<br>{n}：重复n次<br>{n,}：出现n次或更多次<br>{n,m}:出现n到m次</p><p>贪婪匹配和惰性匹配：<br>.*：贪婪匹配（最远的一项）<br>.*？：惰性匹配（最近的一项）</p>]]></content:encoded>
-      
-      
-      <category domain="http://example.com/categories/python/">python</category>
-      
-      
-      <category domain="http://example.com/tags/python/">python</category>
-      
-      
-      <comments>http://example.com/2024/01/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/#disqus_thread</comments>
       
     </item>
     
