@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>We are all in the gutter.</description>
-    <pubDate>Tue, 30 Jun 2026 13:56:52 GMT</pubDate>
+    <pubDate>Tue, 30 Jun 2026 15:17:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,9 +18,19 @@
       <guid>http://example.com/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/</guid>
       <pubDate>Tue, 30 Jun 2026 13:56:52 GMT</pubDate>
       
+      <description>&lt;p&gt;记录Agent学习历程&lt;/p&gt;</description>
       
       
       
+      <content:encoded><![CDATA[<p>记录Agent学习历程</p><span id="more"></span><p>做了诸多天的博客页面美化，今日开启新章进行Agent相关学习<br>主要按照Hello-Agent开源教程进行学习</p><h1 id="day1-Agent部分基础概念"><a href="#day1-Agent部分基础概念" class="headerlink" title="day1 Agent部分基础概念"></a>day1 Agent部分基础概念</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol><li>传统智能体分类的理解</li></ol><ul><li>反射智能体：自动恒温器</li><li>基于模型的反射智能体：车机系统</li><li>基于目标的智能体：GPS导航系统</li><li>基于效用的智能体：添加效用值（满意度）</li><li>学习型智能体：强化学习，AlphaGo</li></ul><ol start="2"><li>大语言模型驱动型（以旅行规划功能为例）</li></ol><ul><li>规划与推理：智能体首先会将这个高层级目标分解为一系列逻辑子任务，例如： [确认出行偏好] -&gt;<br>[查询目的地信息] -&gt; [制定行程草案] -&gt; [预订票务住宿] 。这是一个内在的、由模型驱动的规划过程。</li><li>工具使用：在执行规划时，智能体识别到信息缺口，会主动调用外部工具来补全。例如，它会调用天气<br>查询接口获取实时天气，并基于“预报有雨”这一信息，在后续规划中倾向于推荐室内活动。</li><li>动态修正：在交互过程中，智能体会将用户的反馈（如“这家酒店超出预算”）视为新的约束，并据此调<br>整后续的行动，重新搜索并推荐符合新要求的选项。整个“查天气 → 调行程 → 订酒店”的流程，展现了<br>其根据上下文动态修正自身行为的能力。</li></ul><ol start="3"><li><p>智能体的构成与运行原理</p><blockquote><p>任务环境的分析PEAS模型</p><blockquote><p>Performance(性能度量)：在预算和时间内，最大化用户满意度与行程合理性<br>Environment（环境）：航旅预定网站，地图服务，天气预报API等网络服务<br>Actuators（执行器）：调用API的函数，向用户界面生成和显示格式化文本<br>Sensors（传感器）：解析API返回的数据（如JSON。HTML）、读取用户输入的自然语言</p></blockquote></blockquote></li><li><p>智能体运行机制<br><img src="/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/Agent_study%5Cagent_Operating_mechanism.png" alt="  " title="智能体与环境交互的基本循环"></p></li></ol>]]></content:encoded>
+      
+      
+      <category domain="http://example.com/categories/AI%E5%AD%A6%E4%B9%A0/">AI学习</category>
+      
+      
+      <category domain="http://example.com/tags/Agent/">Agent</category>
+      
+      <category domain="http://example.com/tags/LLM/">LLM</category>
       
       
       <comments>http://example.com/2026/06/30/Agent%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/#disqus_thread</comments>
@@ -43,9 +53,9 @@
       <category domain="http://example.com/categories/AI%E5%AD%A6%E4%B9%A0/">AI学习</category>
       
       
-      <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
-      
       <category domain="http://example.com/tags/LLM/">LLM</category>
+      
+      <category domain="http://example.com/tags/ai%E5%BC%95%E6%93%8E/">ai引擎</category>
       
       
       <comments>http://example.com/2026/06/21/llama%E9%83%A8%E7%BD%B2%E5%92%8C%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
